@@ -1,0 +1,5 @@
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionaryMain.dll
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionaryMain.pdb
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.csprojAssemblyReference.cache
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.dll
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.pdb
