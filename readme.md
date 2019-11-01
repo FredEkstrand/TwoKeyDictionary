@@ -1,7 +1,7 @@
 # TwoKeyDictionary<TKeyA,TKeyB,TValue>
 ![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg) ![License MIT](https://img.shields.io/badge/Licence-MIT-blue.svg)
 
-![image](https://github.com/FredEkstrand/ImageFiles/raw/master/TwoKeyDictionary/TwoKeyDictionary.png)	
+![image](https://github.com/FredEkstrand/ImageFiles/raw/master/TwoKeyDictionary/TwoKeyDictionaryImage.png)	
 
 # Overview
 A Two Key Dictionary is a data structure that represents a collection of a-keys, b-keys and values triple of data. You only need either a-key or b-key to return the value. The two key dictionary have the restriction that a-key and b-key cannot have the same value weather they map to the same value or not. **_Note:_** the current version doesn't provide any checks for duplicate key values between a-key and b-key. If so, the results would be nondeterministic. 
