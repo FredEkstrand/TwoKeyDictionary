@@ -33,18 +33,18 @@ namespace ConsoleTester
             Console.WriteLine("Number of CrayolaCrayons entries: {0}\n", CrayolaColors.Count);
             Console.WriteLine("Example 1: Index by A-Key for hex color value.");
            
-            string result = "FF" + CrayolaColors["AntiqueBrass"]; 
+            string result = "CrayolaColors["AntiqueBrass"]; 			
             Console.WriteLine("CrayolaColors[\"AntiqueBrass\"] == {0} HexColor index 18 = {1}",result, "FFCD9575");
 
-            result = "FF" + CrayolaColors["Fern"]; 
+            result = CrayolaColors["Fern"]; 
             Console.WriteLine("CrayolaColors[\"Fern\"] == {0} HexColor index 34 = {1}", result, "FF71BC78");
 
             Console.WriteLine("\nExample 2: Index by B-Key for hex color value.");
             
-            result = "FF" + CrayolaColors[CrayolaCrayons.Fern];
+            result = CrayolaColors[CrayolaCrayons.Fern];
             Console.WriteLine("CrayolaColors[CrayolaCrayons.Fern] == {0} HexColor index 34 = {1}", result, "FF71BC78");
            
-            result = "FF" + CrayolaColors[CrayolaCrayons.AntiqueBrass];
+            result = CrayolaColors[CrayolaCrayons.AntiqueBrass];
             Console.WriteLine("CrayolaColors[CrayolaCrayons.AntiqueBrass] == {0} HexColor index 18 = {1}", result, "FFCD9575");
 
             Console.WriteLine("\nExample 3: Remove Key-A.");
