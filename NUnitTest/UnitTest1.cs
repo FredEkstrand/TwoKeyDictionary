@@ -15,11 +15,11 @@ namespace NUnitTests
         private const int POPSIZE = 11;
   
 
-        [SetUp]
-        public void Setup()
-        {
+        //[SetUp]
+        //public void Setup()
+        //{
            
-        }
+        //}
 
         #region Constructor
         [Test]

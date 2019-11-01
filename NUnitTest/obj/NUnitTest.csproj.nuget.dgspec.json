@@ -47,17 +47,21 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
+            "NUnit": {
               "target": "Package",
-              "version": "[16.2.0, )"
+              "version": "[3.12.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "NUnit.Extension.NUnitProjectLoader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[3.13.0, )"
-            },
-            "nunit": {
-              "target": "Package",
-              "version": "[3.12.0, )"
+              "version": "[3.15.1, )"
             }
           },
           "imports": [
