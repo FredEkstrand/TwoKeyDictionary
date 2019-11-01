@@ -1,0 +1,8 @@
+C:\GitHub\TwoKeyDictionary\SimpleDemo\bin\Debug\SimpleDemo.exe
+C:\GitHub\TwoKeyDictionary\SimpleDemo\bin\Debug\SimpleDemo.pdb
+C:\GitHub\TwoKeyDictionary\SimpleDemo\bin\Debug\TwoKeyDictionaryMain.dll
+C:\GitHub\TwoKeyDictionary\SimpleDemo\bin\Debug\TwoKeyDictionaryMain.pdb
+C:\GitHub\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.csprojAssemblyReference.cache
+C:\GitHub\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.csproj.CopyComplete
+C:\GitHub\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.exe
+C:\GitHub\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.pdb
