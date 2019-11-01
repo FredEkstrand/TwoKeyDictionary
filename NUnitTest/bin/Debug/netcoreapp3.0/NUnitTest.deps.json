@@ -1011,7 +1011,7 @@
       },
       "TwoKeyDictionaryMain/1.0.0": {
         "runtime": {
-          "TwoKeyDictionaryMain.dll": {}
+          "TwoKeyDictionary.dll": {}
         }
       }
     }

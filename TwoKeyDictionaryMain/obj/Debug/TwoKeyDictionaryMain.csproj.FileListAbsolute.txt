@@ -1,5 +1,5 @@
-C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionaryMain.dll
-C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionaryMain.pdb
 C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.csprojAssemblyReference.cache
-C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.dll
-C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.pdb
+C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.dll
+C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.pdb
+C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionary.dll
+C:\GitHub\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionary.pdb

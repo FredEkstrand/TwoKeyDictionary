@@ -84,11 +84,11 @@ C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.V
 C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionaryMain.dll
-C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionaryMain.pdb
 C:\GitHub\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.csprojAssemblyReference.cache
 C:\GitHub\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.AssemblyInfoInputs.cache
 C:\GitHub\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.AssemblyInfo.cs
 C:\GitHub\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.csproj.CopyComplete
 C:\GitHub\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.dll
 C:\GitHub\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.pdb
+C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionary.dll
+C:\GitHub\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionary.pdb

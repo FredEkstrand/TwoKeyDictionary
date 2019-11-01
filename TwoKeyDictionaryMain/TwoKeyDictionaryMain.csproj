@@ -7,8 +7,8 @@
     <ProjectGuid>{7FD8AD9F-ED77-43FD-8D05-056F1C372A57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TwoKeyDictionaryMain</RootNamespace>
-    <AssemblyName>TwoKeyDictionaryMain</AssemblyName>
+    <RootNamespace>Ekstrand.Collections.Generic</RootNamespace>
+    <AssemblyName>TwoKeyDictionary</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
