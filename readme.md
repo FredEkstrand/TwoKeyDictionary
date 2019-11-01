@@ -3,18 +3,18 @@
 [Project Visuals] Include project screen shot, logo, etc.	
 
 # Overview
-A Two Key Dictionary is a data structure that represents a collection of (key-a + key-b)s and values triple of data.  Then use either key-a or key-b to return the value. The two key dictionary have the restriction that key-a and key-b cannot have the same value weather they map to the same value or not. **_Note:_** the current version doesn't provide any checks for duplicate key values between key-a and key-b. If so, the results would be nondeterministic. 
+A Two Key Dictionary is a data structure that represents a collection of a-keys, b-keys and values triple of data. You only need either a-key or b-key to return the value. The two key dictionary have the restriction that a-key and b-key cannot have the same value weather they map to the same value or not. **_Note:_** the current version doesn't provide any checks for duplicate key values between a-key and b-key. If so, the results would be nondeterministic. 
 
 A Dictionary class is a data structure that represents a collection of keys and values pair of data.
 
 # Features
 The Two Key Dictionary provide the following features:
-* The two key dictionary requires only key-a or key-b to return the mapped value.
-* The two key dictionary key-a or key-b cannot be null, but value can be.
+* The two key dictionary requires only a-key or b-key to return the mapped value.
+* The two key dictionary a-key or b-key cannot be null, but value can be.
 * The two key dictionary is an ordered collection.
-* The two key dictionary indexer by, key-a or key-b, to access individual item.
+* The two key dictionary indexer by, a-key or b-key, to access individual item.
 * Provided TryGetValue() method to get the value of a key to avoid possible runtime exceptions. 
-* The two key dictionary cannot contain duplicate a-keys or b-keys.
+* The two key dictionary cannot contain duplicate a-keys or b-key.
 * The two key dictionary cannot contain duplicate value for a-key and b-key.
 * The two key dictionary is not thread-safe.
 
