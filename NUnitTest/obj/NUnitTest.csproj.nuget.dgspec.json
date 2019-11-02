@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj": {}
+    "C:\\SoftwareProjects\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj": {
+    "C:\\SoftwareProjects\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj",
+        "projectUniqueName": "C:\\SoftwareProjects\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj",
         "projectName": "NUnitTest",
-        "projectPath": "C:\\GitHub\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj",
+        "projectPath": "C:\\SoftwareProjects\\TwoKeyDictionary\\NUnitTest\\NUnitTest.csproj",
         "packagesPath": "C:\\Users\\Fred Ekstrand\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\TwoKeyDictionary\\NUnitTest\\obj\\",
+        "outputPath": "C:\\SoftwareProjects\\TwoKeyDictionary\\NUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\GitHub\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj": {
-                "projectPath": "C:\\GitHub\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj"
+              "C:\\SoftwareProjects\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj": {
+                "projectPath": "C:\\SoftwareProjects\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj"
               }
             }
           }
@@ -47,21 +47,17 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "NUnit": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[3.12.0, )"
-            },
-            "NUnit.ConsoleRunner": {
-              "target": "Package",
-              "version": "[3.10.0, )"
-            },
-            "NUnit.Extension.NUnitProjectLoader": {
-              "target": "Package",
-              "version": "[3.6.0, )"
+              "version": "[16.2.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[3.15.1, )"
+              "version": "[3.13.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
             }
           },
           "imports": [
@@ -83,12 +79,12 @@
         }
       }
     },
-    "C:\\GitHub\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj": {
+    "C:\\SoftwareProjects\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj",
+        "projectUniqueName": "C:\\SoftwareProjects\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj",
         "projectName": "TwoKeyDictionaryMain",
-        "projectPath": "C:\\GitHub\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj"
+        "projectPath": "C:\\SoftwareProjects\\TwoKeyDictionary\\TwoKeyDictionaryMain\\TwoKeyDictionaryMain.csproj"
       },
       "frameworks": {
         "net40": {}
