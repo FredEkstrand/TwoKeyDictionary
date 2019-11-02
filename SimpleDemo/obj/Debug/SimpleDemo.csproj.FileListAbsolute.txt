@@ -1,0 +1,8 @@
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.csprojAssemblyReference.cache
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\bin\Debug\SimpleDemo.exe
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\bin\Debug\SimpleDemo.pdb
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\bin\Debug\TwoKeyDictionaryMain.dll
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\bin\Debug\TwoKeyDictionaryMain.pdb
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.csproj.CopyComplete
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.exe
+C:\SoftwareProjects\TwoKeyDictionary\SimpleDemo\obj\Debug\SimpleDemo.pdb
