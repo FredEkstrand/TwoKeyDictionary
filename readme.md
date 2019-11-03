@@ -56,7 +56,7 @@ static void Main(string[] args)
 ```
 
 # Code Documentation
-MSDN-style code documentation [here](https://github.com/FredEkstrand/TwoKeyDictionary/Doc).
+MSDN-style code documentation [here](https://github.com/FredEkstrand/TwoKeyDictionary/docs).
 
 # History
  1.0.0 Initial release into the wild.
