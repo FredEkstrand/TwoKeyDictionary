@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TwoKeyDictionaryMain")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A two key dictionary")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Fred Ekstrand Jr")]
 [assembly: AssemblyProduct("TwoKeyDictionaryMain")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ©  2019 by Fred Ekstrand Jr")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

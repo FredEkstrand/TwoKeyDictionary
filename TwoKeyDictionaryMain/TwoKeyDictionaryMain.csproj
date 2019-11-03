@@ -7,8 +7,8 @@
     <ProjectGuid>{7FD8AD9F-ED77-43FD-8D05-056F1C372A57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TwoKeyDictionaryMain</RootNamespace>
-    <AssemblyName>TwoKeyDictionaryMain</AssemblyName>
+    <RootNamespace>Ekstrand.Collections.Generic</RootNamespace>
+    <AssemblyName>TwoKeyDictionary</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\TwoKeyDictionary.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -48,9 +49,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoKeyDictionary.cs" />
     <Compile Include="TwoKeyValueTriple.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

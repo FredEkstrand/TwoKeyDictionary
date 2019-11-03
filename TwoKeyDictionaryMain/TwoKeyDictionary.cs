@@ -9,6 +9,12 @@ using Ekstrand.Collections.Generic;
 
 namespace Ekstrand.Collections.Generic
 {
+    /// <summary>
+    /// Represents a collection of A-keys, B-Keys and values.
+    /// </summary>
+    /// <typeparam name="TKeyA">The type of the A-keys in the dictionary.</typeparam>
+    /// <typeparam name="TKeyB">The type of the B-keys in the dictionary.</typeparam>
+    /// <typeparam name="TValue">The type of the values in the dictionary.</typeparam>
     [DebuggerTypeProxy(typeof(TwoKeyDictionaryDebugView<,,>))]
     [Serializable]
     [System.Runtime.InteropServices.ComVisible(false)]
@@ -55,16 +61,42 @@ namespace Ekstrand.Collections.Generic
 
         #region Constructors
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the default equality comparer for the key type.
+        /// </summary>
         public TwoKeyDictionary() : this(0, null, null) { }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the specified initial capacity, and uses the default equality comparer for the key type.
+        /// </summary>
+        /// <param name="capacity">The initial number of elements that the Dictionary&lt;TKeyA,TKeyB,TValue&gt; can contain.</param>
         public TwoKeyDictionary(int capacity) : this(capacity, null, null) { }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the specified IEqualityComparer&lt;TKeyA&gt; and IEqualityComparer&lt;TKeyB&gt;.
+        /// </summary>
+        /// <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default IEqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+        /// <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default IEqualityComparer&lt;TKeyB&gt; for the type of the key.</param>
         public TwoKeyDictionary(IEqualityComparer<TKeyA> comparerA, IEqualityComparer<TKeyB> comparerB) : this(0, comparerA, comparerB) { }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the specified IEqualityComparer&lt;TKeyA&gt;.
+        /// </summary>
+        /// <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default IEqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
         public TwoKeyDictionary(IEqualityComparer<TKeyA> comparerA) : this(0, comparerA, null) { }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the specified IEqualityComparer&lt;TKeyB&gt;.
+        /// </summary>
+        /// <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyB&gt; for the type of the key.</param>
         public TwoKeyDictionary(IEqualityComparer<TKeyB> comparerB) : this(0, null, comparerB) { }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the specified initial capacity, and uses the specified IEqualityComparer&lt;TKeyA&gt; and IEqualityComparer&lt;TKeyB&gt;.
+        /// </summary>
+        /// <param name="capacity">The initial number of elements that the Dictionary&lt;TKeyA,TKeyB,TValue&gt; can contain.</param>
+        /// <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+        /// <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyB&gt;> for the type of the key.</param>
         public TwoKeyDictionary(int capacity, IEqualityComparer<TKeyA> comparerA, IEqualityComparer<TKeyB> comparerB)
         {
             if (capacity < 0) throw new ArgumentOutOfRangeException("Capacity");
@@ -73,8 +105,18 @@ namespace Ekstrand.Collections.Generic
             this.comparerB = comparerB ?? EqualityComparer<TKeyB>.Default;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; and uses the default equality comparer for the key type.
+        /// </summary>
+        /// <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose elements are copied to the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
         public TwoKeyDictionary(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary) : this(dictionary, null, null) { }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; and uses the IEqualityComparer&lt;TKeyA&gt; and IEqualityComparer&lt;TKeyB&gt;.
+        /// </summary>
+        /// <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose elements are copied to the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        /// <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+        /// <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyB&gt; for the type of the key.</param>
         public TwoKeyDictionary(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary, IEqualityComparer<TKeyA> comparerA, IEqualityComparer<TKeyB> comparerB) :
             this(dictionary != null ? dictionary.Count : 0, comparerA, comparerB)
         {
@@ -90,6 +132,11 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class with serialized data.
+        /// </summary>
+        /// <param name="info">A SerializationInfo object containing the information required to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        /// <param name="context">A StreamingContext structure containing the source and destination of the serialized stream associated with the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
         protected TwoKeyDictionary(SerializationInfo info, StreamingContext context)
         {
             //We can't do anything with the keys and values until the entire graph has been deserialized
@@ -102,6 +149,9 @@ namespace Ekstrand.Collections.Generic
 
         #region Properties
 
+        /// <summary>
+        /// Gets a collection containing the A-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         public ICollection<TKeyA> AKeys
         {
             get
@@ -111,6 +161,9 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Gets a collection containing the A-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         ICollection ITwoKeyDictionary.AKeys
         {
             get
@@ -119,6 +172,10 @@ namespace Ekstrand.Collections.Generic
                 return Akeys;
             }
         }
+
+        /// <summary>
+        /// Gets a collection containing the A-keys of the IReadOnlyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         IEnumerable<TKeyA> IReadOnlyTwoKeyDictionary<TKeyA, TKeyB, TValue>.AKeys
         {
             get
@@ -131,6 +188,9 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Gets a collection containing the B-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         public ICollection<TKeyB> BKeys
         {
             get
@@ -144,6 +204,9 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Gets a collection containing the B-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         ICollection ITwoKeyDictionary.BKeys
         {
             get
@@ -157,6 +220,9 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Gets a collection containing the B-keys of the IReadOnlyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         IEnumerable<TKeyB> IReadOnlyTwoKeyDictionary<TKeyA, TKeyB, TValue>.BKeys
         {
             get
@@ -168,6 +234,10 @@ namespace Ekstrand.Collections.Generic
                 return Bkeys;
             }
         }
+
+        /// <summary>
+        /// Gets the number of A-key/B-Key/value triple contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         public int Count
         {
             get
@@ -180,9 +250,25 @@ namespace Ekstrand.Collections.Generic
                 return (count - freeCount) / 2;
             }
         }
+
+        /// <summary>
+        /// Gets a value that indicates whether the IDictionary has a fixed size.
+        /// </summary>
         public bool IsFixedSize { get { return false; } }
+
+        /// <summary>
+        /// Gets a value that indicates whether the dictionary is read-only.
+        /// </summary>
         public bool IsReadOnly { get { return false; } }
+
+        /// <summary>
+        /// Gets a value that indicates whether access to the ICollection is synchronized(thread safe).
+        /// </summary>
         public bool IsSynchronized { get { return false; } }
+
+        /// <summary>
+        /// Gets an object that can be used to synchronize access to the ICollection.
+        /// </summary>
         public object SyncRoot
         {
             get
@@ -194,6 +280,10 @@ namespace Ekstrand.Collections.Generic
                 return _syncRoot;
             }
         }
+
+        /// <summary>
+        /// Gets a collection containing the values in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         public ICollection<TValue> Values
         {
             get
@@ -205,6 +295,10 @@ namespace Ekstrand.Collections.Generic
                 return values;
             }
         }
+
+        /// <summary>
+        ///  Gets a collection containing the values in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         ICollection ITwoKeyDictionary.Values
         {
             get
@@ -216,6 +310,10 @@ namespace Ekstrand.Collections.Generic
                 return values;
             }
         }
+
+        /// <summary>
+        /// Gets a collection containing the values of the IReadOnlyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         IEnumerable<TValue> IReadOnlyTwoKeyDictionary<TKeyA, TKeyB, TValue>.Values
         {
             get
@@ -229,6 +327,11 @@ namespace Ekstrand.Collections.Generic
 
         #region Indexers
 
+        /// <summary>
+        /// Gets or sets the value with the specified key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public object this[object key]
         {
             get
@@ -315,6 +418,11 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Gets or sets the value associated with the specified B-key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public TValue this[TKeyB key]
         {
             get
@@ -331,6 +439,12 @@ namespace Ekstrand.Collections.Generic
                 Insert(key, value, false);
             }
         }
+
+        /// <summary>
+        /// Gets or sets the value associated with the specified A-key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public TValue this[TKeyA key]
         {
             get
@@ -357,16 +471,32 @@ namespace Ekstrand.Collections.Generic
 
         #region Methods
 
+        /// <summary>
+        /// Adds the specified key and value to the dictionary.
+        /// </summary>
+        /// <param name="keyA">The A-key of the element to add.</param>
+        /// <param name="keyB">The B-key of the element to add.</param>
+        /// <param name="value">The value of the element to add. The value can be null for reference types.</param>
         public void Add(TKeyA keyA, TKeyB keyB, TValue value)
         {
             Insert(keyA, keyB, value, true);
         }
 
+        /// <summary>
+        /// Adds the specified value to the ICollection&lt;T&gt; with the specified key.
+        /// </summary>
+        /// <param name="item">The TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; structure representing the key and value to add to the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
         public void Add(TwoKeyValueTriple<TKeyA, TKeyB, TValue> item)
         {
             Add(item.KeyA, item.KeyB, item.Value); 
         }
 
+        /// <summary>
+        /// Adds the specified key and value to the dictionary.
+        /// </summary>
+        /// <param name="keyA">The object to use as the A-key.</param>
+        /// <param name="keyB">The object to use as the B-key.</param>
+        /// <param name="value">The object to use as the value.</param>
         public void Add(object keyA, object keyB, object value)
         {
             TKeyA tempKeyA;
@@ -408,6 +538,9 @@ namespace Ekstrand.Collections.Generic
 
         }
 
+        /// <summary>
+        /// Removes all keys and values from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         public void Clear()
         {
             if (count > 0)
@@ -481,6 +614,11 @@ namespace Ekstrand.Collections.Generic
             version++;
         }
 
+        /// <summary>
+        /// Determines whether the ICollection&lt;T&gt; contains a specific key and value.
+        /// </summary>
+        /// <param name="item">The KeyValuePair&lt;TKeyA,TKeyB,TValue&gt; structure to locate in the ICollection&lt;T&gt;.</param>
+        /// <returns></returns>
         public bool Contains(TwoKeyValueTriple<TKeyA, TKeyB, TValue> item)
         {
             int i = FindEntry(item.KeyB);
@@ -491,6 +629,11 @@ namespace Ekstrand.Collections.Generic
             return false;
         }
 
+        /// <summary>
+        /// The key to locate in the IDictionary.
+        /// </summary>
+        /// <param name="key">The key to locate in the IDictionary.</param>
+        /// <returns>true if the IDictionary contains an element with the specified key; otherwise, false.</returns>
         public bool Contains(object key)
         {
             if (key is TKeyA)
@@ -513,16 +656,31 @@ namespace Ekstrand.Collections.Generic
 
         }
 
+        /// <summary>
+        ///  Determines whether the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains the specified A-key.
+        /// </summary>
+        /// <param name="keyA">The A-key to locate in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        /// <returns>true if the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
         public bool ContainsKeyA(TKeyA keyA)
         {
             return FindEntry(keyA) >= 0;
         }
 
+        /// <summary>
+        /// Determines whether the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains the specified B-key.
+        /// </summary>
+        /// <param name="keyB">The B-key to locate in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        /// <returns>true if the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
         public bool ContainsKeyB(TKeyB keyB)
         {
             return FindEntry(keyB) >= 0;
         }
 
+        /// <summary>
+        /// Determines whether the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains a specific value.
+        /// </summary>
+        /// <param name="value">The value to locate in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;. The value can be null for reference types.</param>
+        /// <returns>true if theDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified value; otherwise, false.</returns>
         public bool ContainsValue(TValue value)
         {
             if (value == null)
@@ -585,6 +743,11 @@ namespace Ekstrand.Collections.Generic
             return -1;
         }
 
+        /// <summary>
+        /// Copies the elements of the ICollection&lt;T&gt; to an array of type TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;, starting at the specified array index.
+        /// </summary>
+        /// <param name="array">The one-dimensional array of type TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; that is the destination of the TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; elements copied from the ICollection&lt;T&gt;. The array must have zero-based indexing.</param>
+        /// <param name="index">The zero-based index in array at which copying begins.</param>
         public void CopyTo(TwoKeyValueTriple<TKeyA, TKeyB, TValue>[] array, int index)
         {
             if (array == null)
@@ -614,26 +777,49 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Copies the elements of the ICollection&lt;T&gt; to an array, starting at the specified array index.
+        /// </summary>
+        /// <param name="array">The one-dimensional array that is the destination of the elements copied from ICollection&lt;T&gt;. The array must have zero-based indexing.</param>
+        /// <param name="index">The zero-based index in array at which copying begins.</param>
+        /// <remarks>This method is not implemented</remarks>
         public void CopyTo(Array array, int index)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
+        /// <returns>A TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;. Enumerator structure for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
         public IEnumerator<TwoKeyValueTriple<TKeyA, TKeyB, TValue>> GetEnumerator()
         {
             return new Enumerator(this, Enumerator.KeyValueTriple);
         }
 
+        /// <summary>
+        /// Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
+        /// <returns>>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.Enumerator structure for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return new Enumerator(this, Enumerator.KeyValueTriple);
         }
 
+        /// <summary>
+        /// Returns an IDictionaryEnumerator for the IDictionary.
+        /// </summary>
+        /// <returns>An IDictionaryEnumerator for the IDictionary.</returns>
         ITwoKeyDictionaryEnumerator ITwoKeyDictionary.GetEnumerator()
         {
             return new Enumerator(this, Enumerator.KeyValueTriple);
         }
 
+        /// <summary>
+        /// Implements the ISerializable interface and returns the data needed to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.
+        /// </summary>
+        /// <param name="info">A SerializationInfo object that contains the information required to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.</param>
+        /// <param name="context">A StreamingContext structure that contains the source and destination of the serialized stream associated with the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.</param>
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             if (info == null)
@@ -869,6 +1055,10 @@ namespace Ekstrand.Collections.Generic
             return (key is TKeyB);
         }
 
+        /// <summary>
+        /// Implements the ISerializable interface and raises the deserialization event when the deserialization is complete.
+        /// </summary>
+        /// <param name="sender">The source of the deserialization event.</param>
         public void OnDeserialization(object sender)
         {
             SerializationInfo siInfo;
@@ -922,6 +1112,11 @@ namespace Ekstrand.Collections.Generic
             HashHelpers.SerializationInfoTable.Remove(this);
         }
 
+        /// <summary>
+        /// Removes a A-key, B-key and value from the dictionary.
+        /// </summary>
+        /// <param name="item">The TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; structure representing the key and value to remove from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        /// <returns>true if the key and value represented by TwoKeyValueTriple is successfully found and removed; otherwise, false. This method returns false if keyValuePair is not found in the ICollection&lt;T&gt;.</returns>
         public bool Remove(TwoKeyValueTriple<TKeyA, TKeyB, TValue> item)
         {
             int i = FindEntry(item.KeyB);
@@ -932,16 +1127,30 @@ namespace Ekstrand.Collections.Generic
             return false;
         }
 
+        /// <summary>
+        /// Removes the value with the specified A-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
+        /// <param name="key">The key of the element to remove.</param>
+        /// <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
         public bool Remove(TKeyA key)
         {
             return RemoveKeyA(key);
         }
 
+        /// <summary>
+        /// Removes the value with the specified B-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
+        /// <param name="key">The key of the element to remove.</param>
+        /// <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
         public bool Remove(TKeyB key)
         {
             return RemoveKeyB(key);
         }
 
+        /// <summary>
+        /// Removes the element with the specified key from the IDictionary.
+        /// </summary>
+        /// <param name="key">The key of the element to remove.</param>
         public void Remove(object key)
         {
 
@@ -956,6 +1165,11 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
+        /// <summary>
+        /// Removes the value with the specified A-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
+        /// <param name="keyA">The key of the element to remove.</param>
+        /// <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
         public bool RemoveKeyA(TKeyA keyA)
         {
             if (keyA == null)
@@ -999,6 +1213,11 @@ namespace Ekstrand.Collections.Generic
             return false;
         }
 
+        /// <summary>
+        /// Removes the value with the specified B-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
+        /// <param name="keyB">The key of the element to remove.</param>
+        /// <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
         public bool RemoveKeyB(TKeyB keyB)
         {
             if (keyB == null)
@@ -1090,6 +1309,12 @@ namespace Ekstrand.Collections.Generic
             entries = newEntries;
         }
 
+        /// <summary>
+        /// Gets the value associated with the specified A-key.
+        /// </summary>
+        /// <param name="keyA">The key of the value to get.</param>
+        /// <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+        /// <returns>true if the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
         public bool TryGetValueKeyA(TKeyA keyA, out TValue value)
         {
             int i = FindEntry(keyA);
@@ -1104,6 +1329,12 @@ namespace Ekstrand.Collections.Generic
             return false;
         }
 
+        /// <summary>
+        /// Gets the value associated with the specified B-key.
+        /// </summary>
+        /// <param name="keyB">The key of the value to get.</param>
+        /// <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+        /// <returns>true if the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
         public bool TryGetValueKeyB(TKeyB keyB, out TValue value)
         {
             int i = FindEntry(keyB);
@@ -1118,6 +1349,9 @@ namespace Ekstrand.Collections.Generic
 
         #endregion Methods
 
+        /// <summary>
+        /// Enumerates the elements of a Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+        /// </summary>
         [Serializable]
         public struct Enumerator : IEnumerator<TwoKeyValueTriple<TKeyA, TKeyB, TValue>>, ITwoKeyDictionaryEnumerator
         {
@@ -1136,7 +1370,6 @@ namespace Ekstrand.Collections.Generic
 
             #region Constructors
 
-
             internal Enumerator(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary, int getEnumeratorRetType)
             {
                 this.dictionary = dictionary;
@@ -1150,11 +1383,17 @@ namespace Ekstrand.Collections.Generic
 
             #region Properties
 
+            /// <summary>
+            /// The element in the Dictionary&lt;TKeyA,TKeyB,TValue&gt; at the current position of the enumerator.
+            /// </summary>
             public TwoKeyValueTriple<TKeyA, TKeyB, TValue> Current
             {
                 get { return current; }
             }
 
+            /// <summary>
+            /// The element in the collection at the current position of the enumerator, as an Object.
+            /// </summary>
             object IEnumerator.Current
             {
                 get
@@ -1175,6 +1414,9 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// The element in the dictionary at the current position of the enumerator, as a DictionaryEntry.
+            /// </summary>
             TwoKeyDictionaryEntry ITwoKeyDictionaryEnumerator.Entry
             {
                 get
@@ -1188,6 +1430,10 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Gets the A-key of the element at the current position of the enumerator.
+            /// </summary>
+            /// <exception cref="InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
             object ITwoKeyDictionaryEnumerator.AKey
             {
                 get
@@ -1201,6 +1447,10 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Gets the B-key of the element at the current position of the enumerator.
+            /// </summary>
+            /// /// <exception cref="InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
             object ITwoKeyDictionaryEnumerator.BKey
             {
                 get
@@ -1214,6 +1464,10 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Gets the value of the element at the current position of the enumerator.
+            /// </summary>
+            /// <exception cref="InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
             object ITwoKeyDictionaryEnumerator.Value
             {
                 get
@@ -1231,10 +1485,18 @@ namespace Ekstrand.Collections.Generic
 
             #region Methods
 
+            /// <summary>
+            /// Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.Enumerator.
+            /// </summary>
             public void Dispose()
             {
             }
 
+            /// <summary>
+            /// Advances the enumerator to the next element of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            /// </summary>
+            /// <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+            /// <exception cref="InvalidOperationException">The collection was modified after the enumerator was created.</exception>
             public bool MoveNext()
             {
                 if (version != dictionary.version)
@@ -1271,6 +1533,11 @@ namespace Ekstrand.Collections.Generic
                 current = new TwoKeyValueTriple<TKeyA, TKeyB, TValue>(dictionary.entries[index].keyA, dictionary.entries[index].keyB, dictionary.entries[index].value);
 
             }
+
+            /// <summary>
+            /// Sets the enumerator to its initial position, which is before the first element in the collection.
+            /// </summary>
+            /// <exception cref="InvalidOperationException">The collection was modified after the enumerator was created.</exception>
             void IEnumerator.Reset()
             {
                 if (version != dictionary.version)
@@ -1286,6 +1553,9 @@ namespace Ekstrand.Collections.Generic
 
         }
 
+        /// <summary>
+        /// Represents the collection of A-keys in a Dictionary&lt;TKeyA,TKeyB,TValue&gt;. This class cannot be inherited.
+        /// </summary>
         [DebuggerTypeProxy(typeof(TwoKeyDictionaryDebugView<,,>))]
         [DebuggerDisplay("Count = {Count}")]
         [Serializable]
@@ -1300,6 +1570,10 @@ namespace Ekstrand.Collections.Generic
 
             #region Constructors
 
+            /// <summary>
+            /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection class that reflects the A-keys in the specified Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            /// </summary>
+            /// <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose keys are reflected in the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.</param>
             public KeyACollection(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary)
             {
                 if (dictionary == null)
@@ -1313,26 +1587,41 @@ namespace Ekstrand.Collections.Generic
 
             #region Properties
 
+            /// <summary>
+            /// Gets the number of elements contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            /// </summary>
             public int Count
             {
                 get { return dictionary.Count; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            /// </summary>
             bool ICollection<TKeyA>.IsReadOnly
             {
                 get { return true; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            /// </summary>
             public bool IsReadOnly
             {
                 get { return true; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+            /// </summary>
             bool ICollection.IsSynchronized
             {
                 get { return false; }
             }
 
+            /// <summary>
+            /// Gets an object that can be used to synchronize access to the ICollection.
+            /// </summary>
             Object ICollection.SyncRoot
             {
                 get { return ((ICollection)dictionary).SyncRoot; }
@@ -1342,21 +1631,38 @@ namespace Ekstrand.Collections.Generic
 
             #region Methods
 
+            /// <summary>
+            /// Adds an item to the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
+            /// <param name="item">The object to add to the ICollection&lt;T&gt;.</param>
             void ICollection<TKeyA>.Add(TKeyA item)
             {
                 throw new NotSupportedException("NotSupported Key Collection Set");
             }
 
+            /// <summary>
+            /// Removes all items from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
             void ICollection<TKeyA>.Clear()
             {
                 throw new NotSupportedException("NotSupported Key Collection Set");
             }
 
+            /// <summary>
+            /// Determines whether the ICollection&lt;T&gt; contains a specific value.
+            /// </summary>
+            /// <param name="item">The object to locate in the ICollection&lt;T&gt;.</param>
+            /// <returns>true if item is found in the ICollection&lt;T&gt;; otherwise, false.</returns>
             bool ICollection<TKeyA>.Contains(TKeyA item)
             {
                 return dictionary.ContainsKeyA(item);
             }
 
+            /// <summary>
+            /// Copies the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection elements to an existing one-dimensional Array, starting at the specified array index.
+            /// </summary>
+            /// <param name="array">The one-dimensional Array that is the destination of the elements copied from Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection. The Array must have zero-based indexing.</param>
+            /// <param name="index">The zero-based index in array at which copying begins.</param>
             public void CopyTo(TKeyA[] array, int index)
             {
                 if (array == null)
@@ -1388,6 +1694,11 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            /// </summary>
+            /// <param name="array">The one-dimensional Array that is the destination of the elements copied from ICollection. The Array must have zero-based indexing.</param>
+            /// <param name="index">The zero-based index in array at which copying begins.</param>
             void ICollection.CopyTo(Array array, int index)
             {
                 if (array == null)
@@ -1444,20 +1755,38 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            /// </summary>
+            /// <returns>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.Enumerator for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.</returns>
             public Enumerator GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
+
+            /// <summary>
+            /// Returns an enumerator that iterates through a collection.
+            /// </summary>
+            /// <returns>An IEnumerator that can be used to iterate through the collection.</returns>
             IEnumerator<TKeyA> IEnumerable<TKeyA>.GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
 
+            /// <summary>
+            ///  Returns an enumerator that iterates through a collection.
+            /// </summary>
+            /// <returns>An IEnumerator that can be used to iterate through the collection.</returns>
             IEnumerator IEnumerable.GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
 
+            /// <summary>
+            /// Removes the first occurrence of a specific object from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
+            /// <param name="item">The object to remove from the ICollection&lt;T&gt;.</param>
+            /// <returns>true if item was successfully removed from the ICollection&lt;T&gt;; otherwise, false. This method also returns false if item was not found in the original ICollection&lt;T&gt;.</returns>
             bool ICollection<TKeyA>.Remove(TKeyA item)
             {
                 throw new NotSupportedException("NotSupported Key Collection Set");
@@ -1467,6 +1796,9 @@ namespace Ekstrand.Collections.Generic
 
             #region Structs + Classes + Enums
 
+            /// <summary>
+            /// Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            /// </summary>
             [Serializable]
             public struct Enumerator : IEnumerator<TKeyA>, System.Collections.IEnumerator
             {
@@ -1481,7 +1813,10 @@ namespace Ekstrand.Collections.Generic
                 #endregion Fields
 
                 #region Constructors
-
+                /// <summary>
+                ///  Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+                /// </summary>
+                /// <param name="dictionary">TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; to enumerate TKeyA.</param>
                 internal Enumerator(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary)
                 {
                     this.dictionary = dictionary;
@@ -1494,6 +1829,9 @@ namespace Ekstrand.Collections.Generic
 
                 #region Properties
 
+                /// <summary>
+                /// Gets the element at the current position of the enumerator.
+                /// </summary>
                 public TKeyA Current
                 {
                     get
@@ -1502,6 +1840,9 @@ namespace Ekstrand.Collections.Generic
                     }
                 }
 
+                /// <summary>
+                /// Gets the element at the current position of the enumerator.
+                /// </summary>
                 Object System.Collections.IEnumerator.Current
                 {
                     get
@@ -1519,10 +1860,17 @@ namespace Ekstrand.Collections.Generic
 
                 #region Methods
 
+                /// <summary>
+                /// Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator.
+                /// </summary>
                 public void Dispose()
                 {
                 }
 
+                /// <summary>
+                /// Advances the enumerator to the next element of the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+                /// </summary>
+                /// <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
                 public bool MoveNext()
                 {
                     if (version != dictionary.version)
@@ -1545,6 +1893,10 @@ namespace Ekstrand.Collections.Generic
                     currentKey = default(TKeyA);
                     return false;
                 }
+
+                /// <summary>
+                /// Sets the enumerator to its initial position, which is before the first element in the collection.
+                /// </summary>
                 void System.Collections.IEnumerator.Reset()
                 {
                     if (version != dictionary.version)
@@ -1564,6 +1916,9 @@ namespace Ekstrand.Collections.Generic
 
         }
 
+        /// <summary>
+        /// Represents the collection of A-keys in a Dictionary&lt;TKeyA,TKeyB,TValue&gt;. This class cannot be inherited.
+        /// </summary>
         [DebuggerTypeProxy(typeof(TwoKeyDictionaryDebugView<,,>))]
         [DebuggerDisplay("Count = {Count}")]
         [Serializable]
@@ -1578,6 +1933,10 @@ namespace Ekstrand.Collections.Generic
 
             #region Constructors
 
+            /// <summary>
+            /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection class that reflects the A-keys in the specified Dictionary&lt;TKeyA,TKeyB,TValue&gt;
+            /// </summary>
+            /// <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose keys are reflected in the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.</param>
             public KeyBCollection(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary)
             {
                 if (dictionary == null)
@@ -1591,23 +1950,38 @@ namespace Ekstrand.Collections.Generic
 
             #region Properties
 
+            /// <summary>
+            /// Gets the number of elements contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            /// </summary>
             public int Count
             {
                 get { return dictionary.Count; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            /// </summary>
             bool ICollection<TKeyB>.IsReadOnly
             {
                 get { return true; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            /// </summary>
             public bool IsReadOnly { get { return true; } }
 
+            /// <summary>
+            /// Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+            /// </summary>
             bool ICollection.IsSynchronized
             {
                 get { return false; }
             }
 
+            /// <summary>
+            /// Gets an object that can be used to synchronize access to the ICollection.
+            /// </summary>
             Object ICollection.SyncRoot
             {
                 get { return ((ICollection)dictionary).SyncRoot; }
@@ -1617,21 +1991,38 @@ namespace Ekstrand.Collections.Generic
 
             #region Methods
 
+            /// <summary>
+            /// Adds an item to the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
+            /// <param name="item">The object to add to the ICollection&lt;T&gt;.</param>
             void ICollection<TKeyB>.Add(TKeyB item)
             {
                 throw new NotSupportedException("NotSupported Key Collection Set");
             }
 
+            /// <summary>
+            /// Removes all items from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
             void ICollection<TKeyB>.Clear()
             {
                 throw new NotSupportedException("NotSupported Key Collection Set");
             }
 
+            /// <summary>
+            /// Determines whether the ICollection&lt;T&gt; contains a specific value.
+            /// </summary>
+            /// <param name="item">The object to locate in the ICollection&lt;T&gt;.</param>
+            /// <returns>true if item is found in the ICollection&lt;T&gt;; otherwise, false.</returns>
             bool ICollection<TKeyB>.Contains(TKeyB item)
             {
                 return dictionary.ContainsKeyB(item);
             }
 
+            /// <summary>
+            /// Copies the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection elements to an existing one-dimensional Array, starting at the specified array index.
+            /// </summary>
+            /// <param name="array">The one-dimensional Array that is the destination of the elements copied from Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection. The Array must have zero-based indexing.</param>
+            /// <param name="index">The zero-based index in array at which copying begins.</param>
             public void CopyTo(TKeyB[] array, int index)
             {
                 if (array == null)
@@ -1660,6 +2051,11 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            /// </summary>
+            /// <param name="array">The one-dimensional Array that is the destination of the elements copied from ICollection. The Array must have zero-based indexing.</param>
+            /// <param name="index">The zero-based index in array at which copying begins.</param>
             void ICollection.CopyTo(Array array, int index)
             {
                 if (array == null)
@@ -1716,20 +2112,38 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            /// </summary>
+            /// <returns>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.Enumerator for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.</returns>
             public Enumerator GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
+
+            /// <summary>
+            /// Returns an enumerator that iterates through a collection.
+            /// </summary>
+            /// <returns>An IEnumerator that can be used to iterate through the collection.</returns>
             IEnumerator<TKeyB> IEnumerable<TKeyB>.GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
 
+            /// <summary>
+            ///  Returns an enumerator that iterates through a collection.
+            /// </summary>
+            /// <returns>An IEnumerator that can be used to iterate through the collection.</returns>
             IEnumerator IEnumerable.GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
 
+            /// <summary>
+            /// Removes the first occurrence of a specific object from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
+            /// <param name="item">The object to remove from the ICollection&lt;T&gt;.</param>
+            /// <returns>true if item was successfully removed from the ICollection&lt;T&gt;; otherwise, false. This method also returns false if item was not found in the original ICollection&lt;T&gt;.</returns>
             bool ICollection<TKeyB>.Remove(TKeyB item)
             {
                 throw new NotSupportedException("NotSupported Key Collection Set");
@@ -1739,6 +2153,9 @@ namespace Ekstrand.Collections.Generic
 
             #region Structs + Classes + Enums
 
+            /// <summary>
+            /// Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            /// </summary>
             [Serializable]
             public struct Enumerator : IEnumerator<TKeyB>, System.Collections.IEnumerator
             {
@@ -1754,6 +2171,10 @@ namespace Ekstrand.Collections.Generic
 
                 #region Constructors
 
+                /// <summary>
+                /// Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyCollection.
+                /// </summary>
+                /// <param name="dictionary">TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; to enumerate TKeyB.</param>
                 internal Enumerator(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary)
                 {
                     this.dictionary = dictionary;
@@ -1765,7 +2186,9 @@ namespace Ekstrand.Collections.Generic
                 #endregion Constructors
 
                 #region Properties
-
+                /// <summary>
+                /// Gets the element at the current position of the enumerator.
+                /// </summary>
                 public TKeyB Current
                 {
                     get
@@ -1774,6 +2197,9 @@ namespace Ekstrand.Collections.Generic
                     }
                 }
 
+                /// <summary>
+                /// Gets the element at the current position of the enumerator.
+                /// </summary>
                 Object System.Collections.IEnumerator.Current
                 {
                     get
@@ -1791,10 +2217,17 @@ namespace Ekstrand.Collections.Generic
 
                 #region Methods
 
+                /// <summary>
+                /// Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator.
+                /// </summary>
                 public void Dispose()
                 {
                 }
 
+                /// <summary>
+                /// Advances the enumerator to the next element of the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+                /// </summary>
+                /// <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
                 public bool MoveNext()
                 {
                     if (version != dictionary.version)
@@ -1817,6 +2250,10 @@ namespace Ekstrand.Collections.Generic
                     currentKey = default(TKeyB);
                     return false;
                 }
+
+                /// <summary>
+                /// Sets the enumerator to its initial position, which is before the first element in the collection.
+                /// </summary>
                 void System.Collections.IEnumerator.Reset()
                 {
                     if (version != dictionary.version)
@@ -1836,6 +2273,9 @@ namespace Ekstrand.Collections.Generic
 
         }
 
+        /// <summary>
+        /// Represents the collection of values in a Dictionary&lt;TKeyA,TKeyB,TValue&gt;. This class cannot be inherited.
+        /// </summary>
         public sealed class ValueCollection : ICollection<TValue>, ICollection, IReadOnlyCollection<TValue>
         {
 
@@ -1847,6 +2287,10 @@ namespace Ekstrand.Collections.Generic
 
             #region Constructors
 
+            /// <summary>
+            /// Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection class that reflects the values in the specified Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            /// </summary>
+            /// <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose values are reflected in the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.</param>
             public ValueCollection(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary)
             {
                 if (dictionary == null)
@@ -1860,21 +2304,33 @@ namespace Ekstrand.Collections.Generic
 
             #region Properties
 
+            /// <summary>
+            /// Gets the number of elements contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            /// </summary>
             public int Count
             {
                 get { return dictionary.Count; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            /// </summary>
             bool ICollection<TValue>.IsReadOnly
             {
                 get { return true; }
             }
 
+            /// <summary>
+            /// Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+            /// </summary>
             bool ICollection.IsSynchronized
             {
                 get { return false; }
             }
 
+            /// <summary>
+            /// Gets an object that can be used to synchronize access to the ICollection.
+            /// </summary>
             Object ICollection.SyncRoot
             {
                 get { return ((ICollection)dictionary).SyncRoot; }
@@ -1884,21 +2340,38 @@ namespace Ekstrand.Collections.Generic
 
             #region Methods
 
+            /// <summary>
+            /// Adds an item to the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            /// </summary>
+            /// <param name="item">The object to add to the ICollection&lt;T&gt;.</param>
             void ICollection<TValue>.Add(TValue item)
             {
                 throw new NotSupportedException("NotSupported Value Collection Set");
             }
 
+            /// <summary>
+            /// Removes all items from the ICollection&lt;T&gt;.This implementation always throws NotSupportedException.
+            /// </summary>
             void ICollection<TValue>.Clear()
             {
                 throw new NotSupportedException("NotSupported Value Collection Set");
             }
 
+            /// <summary>
+            /// Determines whether the ICollection&lt;T&gt; contains a specific value.
+            /// </summary>
+            /// <param name="item"></param>
+            /// <returns></returns>
             bool ICollection<TValue>.Contains(TValue item)
             {
                 return dictionary.ContainsValue(item);
             }
 
+            /// <summary>
+            /// Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            /// </summary>
+            /// <param name="array">The one-dimensional Array that is the destination of the elements copied from ICollection. The Array must have zero-based indexing.</param>
+            /// <param name="index">The zero-based index in array at which copying begins.</param>
             public void CopyTo(TValue[] array, int index)
             {
                 if (array == null)
@@ -1927,6 +2400,11 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Copies the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection elements to an existing one-dimensional Array, starting at the specified array index.
+            /// </summary>
+            /// <param name="array">The one-dimensional Array that is the destination of the elements copied from Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection. The Array must have zero-based indexing.</param>
+            /// <param name="index">The zero-based index in array at which copying begins.</param>
             void ICollection.CopyTo(Array array, int index)
             {
                 if (array == null)
@@ -1981,15 +2459,28 @@ namespace Ekstrand.Collections.Generic
                 }
             }
 
+            /// <summary>
+            /// Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            /// </summary>
+            /// <returns>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.</returns>
             public Enumerator GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
+
+            /// <summary>
+            /// Returns an enumerator that iterates through a collection.
+            /// </summary>
+            /// <returns>An IEnumerator&lt;T&gt; that can be used to iterate through the collection.</returns>
             IEnumerator<TValue> IEnumerable<TValue>.GetEnumerator()
             {
                 return new Enumerator(dictionary);
             }
 
+            /// <summary>
+            /// Returns an enumerator that iterates through a collection.
+            /// </summary>
+            /// <returns>An IEnumerator&lt;T&gt; that can be used to iterate through the collection.</returns>
             IEnumerator IEnumerable.GetEnumerator()
             {
                 return new Enumerator(dictionary);
@@ -2004,6 +2495,9 @@ namespace Ekstrand.Collections.Generic
 
             #region Structs + Classes + Enums
 
+            /// <summary>
+            /// Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            /// </summary>
             [Serializable]
             public struct Enumerator : IEnumerator<TValue>, System.Collections.IEnumerator
             {
@@ -2019,6 +2513,10 @@ namespace Ekstrand.Collections.Generic
 
                 #region Constructors
 
+                /// <summary>
+                /// Enumerates the elements of a Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+                /// </summary>
+                /// <param name="dictionary">Dictionary&lt;TKeyA,TKeyB,TValue&gt; to enumerate over its collection for TValues.</param>
                 internal Enumerator(TwoKeyDictionary<TKeyA, TKeyB, TValue> dictionary)
                 {
                     this.dictionary = dictionary;
@@ -2031,6 +2529,9 @@ namespace Ekstrand.Collections.Generic
 
                 #region Properties
 
+                /// <summary>
+                /// Gets the element at the current position of the enumerator.
+                /// </summary>
                 public TValue Current
                 {
                     get
@@ -2039,6 +2540,9 @@ namespace Ekstrand.Collections.Generic
                     }
                 }
 
+                /// <summary>
+                /// Gets the element at the current position of the enumerator.
+                /// </summary>
                 Object System.Collections.IEnumerator.Current
                 {
                     get
@@ -2056,10 +2560,17 @@ namespace Ekstrand.Collections.Generic
 
                 #region Methods
 
+                /// <summary>
+                /// Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator.
+                /// </summary>
                 public void Dispose()
                 {
                 }
 
+                /// <summary>
+                /// Advances the enumerator to the next element of the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+                /// </summary>
+                /// <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
                 public bool MoveNext()
                 {
                     if (version != dictionary.version)
@@ -2081,6 +2592,10 @@ namespace Ekstrand.Collections.Generic
                     currentValue = default(TValue);
                     return false;
                 }
+
+                /// <summary>
+                /// Sets the enumerator to its initial position, which is before the first element in the collection.
+                /// </summary>
                 void System.Collections.IEnumerator.Reset()
                 {
                     if (version != dictionary.version)

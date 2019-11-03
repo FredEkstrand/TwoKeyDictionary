@@ -1,5 +1,6 @@
-C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionaryMain.dll
-C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionaryMain.pdb
 C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.csprojAssemblyReference.cache
-C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.dll
-C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionaryMain.pdb
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.xml
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.dll
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.pdb
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionary.dll
+C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\obj\Debug\TwoKeyDictionary.pdb
