@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2019.4.7.0" projectFile="C:\SoftwareArtifacts\TwoKeyDictionary\TwoKeyDictionaryDoc.shfbproj" started="11/3/2019 11:52:43 AM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    C:\SoftwareArtifacts\TwoKeyDictionary
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.0&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2015IconSetPresentation_v2019_4_7_0&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2019.4.7.0
+Copyright &#169; 2006-2019, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.dll
+    Found assembly &#39;C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.dll&#39;
+Source: C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.xml
+
+References to include (excluding framework assemblies):
+    TwoKeyDictionary
+
+Copying XML comments files
+    C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.xml -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\TwoKeyDictionary.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0310
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0080
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateRefInfo.proj]
+Build started 11/3/2019 11:52:45 AM.
+Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Found a current program database (PDB) file for &#39;C:\SoftwareProjects\TwoKeyDictionary\TwoKeyDictionaryMain\bin\Debug\TwoKeyDictionary.dll&#39;.
+  Loaded 1 assemblies for reflection and 2 dependency assemblies.
+  Source code location not found for Ekstrand.Collections.Generic.IReadOnlyCollection`1
+  Wrote information on 2 namespaces, 13 types, and 140 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.50
+    Last step completed in 00:00:01.7216
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - TransformManifest.proj]
+Build started 11/3/2019 11:52:47 AM.
+Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.ungrouped&quot;.
+  AddNamespaceGroups (v2019.4.7.0)
+  Copyright c 2006-2019, Eric Woodruff, All Rights Reserved
+  Added 0 namespace group entries
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_1 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_2 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2},System.Collections.Generic.IEqualityComparer{`0},System.Collections.Generic.IEqualityComparer{`1})
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_3 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_4 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Collections.Generic.IEqualityComparer{`1})
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_5 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Collections.Generic.IEqualityComparer{`1})
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_6 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Int32)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_7 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer{`0},System.Collections.Generic.IEqualityComparer{`1})
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor_8 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Add_1 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Add(System.Object,System.Object,System.Object)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Add_2 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Add(`0,`1,`2)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Contains_1 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Contains(System.Object)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_CopyTo_1 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.CopyTo(System.Array,System.Int32)
+    Unique name P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Item_1 generated for P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Item(`0)
+    Unique name P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Item_2 generated for P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Item(`1)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Remove_1 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(System.Object)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Remove_2 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(`0)
+    Unique name M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Remove_3 generated for M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(`1)
+  XslTransform (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.97
+    Last step completed in 00:00:01.1785
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0430
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0040
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 11/3/2019 11:52:48 AM.
+Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.21
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.4038
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.2977
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\SoftwareArtifacts\TwoKeyDictionary\Doc\sandcastle.config
+  Updating reference topic configurations.
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00.0103
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - BuildTopics.proj]
+Build started 11/3/2019 11:52:49 AM.
+Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2019.4.7.0)
+  Copyright c 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2019, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Ekstrand.Collections.ITwoKeyDictionary] MSDN web service failed.  No further look ups will be performed for this build. [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : Reason: Unable to connect to the remote server [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 65.52.103.105:80 [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Ekstrand.Collections.ITwoKeyDictionary.Remove(System.Object)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Contains(Ekstrand.Collections.Generic.TwoKeyValueTriple{`0,`1,`2})] Missing &lt;returns&gt; documentation [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`2)] Missing &lt;returns&gt; documentation [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`2)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`2)] Missing &lt;returns&gt; documentation [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`2)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj]
+  Processed 188 topic(s)
+  7 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 5 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
+Done Building Project &quot;C:\SoftwareArtifacts\TwoKeyDictionary\Doc\BuildTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:35.01
+    Last step completed in 00:00:35.2600
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0060
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2019.4.7.0
+Copyright c 2006-2019, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website
+Processed 188 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\SoftwareArtifacts\TwoKeyDictionary\Doc\WebKI.xml
+Saving website table of contents to C:\SoftwareArtifacts\TwoKeyDictionary\Doc\WebTOC.xml
+    Last step completed in 00:00:00.7695
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\AlertCaution.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\AlertNote.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\AlertSecurity.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\CFW.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\CodeExample.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\CodeExample.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\CodeExample.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\favicon.ico -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privclass.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privdelegate.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privenumeration.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privevent.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privextension.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privfield.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privinterface.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privmethod.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privproperty.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\privstructure.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protclass.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protdelegate.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protenumeration.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protevent.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protextension.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protfield.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protinterface.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protmethod.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protoperator.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protproperty.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\protstructure.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubclass.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubdelegate.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubenumeration.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubevent.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubextension.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubfield.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubinterface.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubmethod.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\puboperator.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubproperty.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\pubstructure.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\SectionCollapsed.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\SectionExpanded.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\slMobile.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\static.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\Thumbs.db -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\Thumbs.db
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\icons\xna.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\scripts\branding.js -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-cs-CZ.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-de-DE.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-en-US.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-es-ES.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-fr-FR.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-Help1.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-HelpViewer.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-it-IT.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-ja-JP.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-ko-KR.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-pl-PL.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-pt-BR.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-ru-RU.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-tr-TR.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-Website.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-zh-CN.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding-zh-TW.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\styles\branding.css -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\index.html -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\search.html -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\SearchHelp.aspx -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\SearchHelp.inc.php -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\SearchHelp.php -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\Web.Config -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\html\GeneralError.htm -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\html\GeneralError.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\html\PageNotFound.htm -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\html\PageNotFound.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\icons\Search.png -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\icons\TocClose.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\icons\TocCollapsed.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\icons\TocExpanded.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\icons\TocOpen.gif -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\scripts\branding-Website.js -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\scripts\clipboard.min.js -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2015IconSetPresentation_v2019_4_7_0\Web\scripts\jquery-3.3.1.min.js -&gt; C:\SoftwareArtifacts\TwoKeyDictionary\Doc\Output\Website\scripts\jquery-3.3.1.min.js
+    Last step completed in 00:00:00.3578
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:00.9964
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 338 files for the website content
+    Last step completed in 00:00:01.7734
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.3489
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 11/3/2019 11:53:28 AM.  Total time: 00:00:44.8481
+
+</buildStep>
+</shfbBuild>
