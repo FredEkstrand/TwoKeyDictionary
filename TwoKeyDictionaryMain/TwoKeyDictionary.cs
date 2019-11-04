@@ -1873,25 +1873,35 @@ namespace Ekstrand.Collections.Generic
                 /// <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
                 public bool MoveNext()
                 {
-                    if (version != dictionary.version)
+                    if (version != this.dictionary.version)
                     {
                         throw new InvalidOperationException("InvalidOperation Enumerator Failed Version");
                     }
 
-                    while ((uint)index < (uint)dictionary.count)
+                    while ((uint)index < (uint)this.dictionary.count)
                     {
                         if (dictionary.entries[index].hashCode >= 0)
                         {
-                            currentKey = dictionary.entries[index].keyA;
-                            index++;
+                            Next();
+                            index += 2;
                             return true;
                         }
-                        index++;
+                        index += 2;
                     }
 
-                    index = dictionary.count + 1;
+                    index = this.dictionary.count + 1;
                     currentKey = default(TKeyA);
                     return false;
+                }
+
+                private void Next()
+                {
+                    if (dictionary.entries[index].IsBkey)
+                    {
+                        index++;
+                        Next();
+                    }
+                    currentKey = dictionary.entries[index].keyA;
                 }
 
                 /// <summary>
@@ -2239,16 +2249,26 @@ namespace Ekstrand.Collections.Generic
                     {
                         if (dictionary.entries[index].hashCode >= 0)
                         {
-                            currentKey = dictionary.entries[index].keyB;
-                            index++;
+                            Next();
+                            index += 2;
                             return true;
                         }
-                        index++;
+                        index += 2;
                     }
 
                     index = dictionary.count + 1;
                     currentKey = default(TKeyB);
                     return false;
+                }
+
+                private void Next()
+                {
+                    if (!dictionary.entries[index].IsBkey)
+                    {
+                        index++;
+                        Next();
+                    }
+                    currentKey = dictionary.entries[index].keyB;
                 }
 
                 /// <summary>
@@ -2582,15 +2602,25 @@ namespace Ekstrand.Collections.Generic
                     {
                         if (dictionary.entries[index].hashCode >= 0)
                         {
-                            currentValue = dictionary.entries[index].value;
-                            index++;
+                            Next();
+                            index += 2;
                             return true;
                         }
-                        index++;
+                        index += 2;
                     }
                     index = dictionary.count + 1;
                     currentValue = default(TValue);
                     return false;
+                }
+
+                private void Next()
+                {
+                    if (!dictionary.entries[index].IsBkey)
+                    {
+                        index++;
+                        Next();
+                    }
+                    currentValue = dictionary.entries[index].value;
                 }
 
                 /// <summary>

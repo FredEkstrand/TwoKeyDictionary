@@ -1,0 +1,1096 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwoKeyDictionary</name>
+    </assembly>
+    <members>
+        <member name="T:Ekstrand.Collections.Generic.HashHelpers">
+            <summary>
+            Taken from MS source 
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3">
+            <summary>
+            Represents a generic read-only collection of A-key,B-key/value triple.
+            </summary>
+            <typeparam name="TKeyA">The type of A-keys in the read-only dictionary.</typeparam>
+            <typeparam name="TKeyB">The type of B-keys in the read-only dictionary.</typeparam>
+            <typeparam name="TValue">The type of values in the read-only dictionary.</typeparam>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.ContainsKeyA(`0)">
+            <summary>
+            Determines whether the read-only dictionary contains an element that has the specified A-key.
+            </summary>
+            <param name="keyA">The A-key to locate.</param>
+            <returns>true if the read-only dictionary contains an element that has the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.ContainsKeyB(`1)">
+            <summary>
+            Determines whether the read-only dictionary contains an element that has the specified B-key.
+            </summary>
+            <param name="keyB">The B-key to locate.</param>
+            <returns>true if the read-only dictionary contains an element that has the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.TryGetValueKeyA(`0,`2@)">
+            <summary>
+            Gets the value that is associated with the specified A-key.
+            </summary>
+            <param name="keyA">The A-key to locate.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+            <returns>true if the object that implements the IReadOnlyTwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; interface contains an element that has the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.TryGetValueKeyB(`1,`2@)">
+            <summary>
+            Gets the value that is associated with the specified A-key.
+            </summary>
+            <param name="keyB">The B-key to locate.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+            <returns>true if the object that implements the IReadOnlyTwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; interface contains an element that has the specified key; otherwise, false.</returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.Item(`0)">
+            <summary>
+            Gets the element that has the specified key in the read-only dictionary.
+            </summary>
+            <param name="keyA">The A-key to locate.</param>
+            <returns>The element that has the specified key in the read-only dictionary.</returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.Item(`1)">
+            <summary>
+            Gets the element that has the specified key in the read-only dictionary.
+            </summary>
+            <param name="keyB">The B-key to locate.</param>
+            <returns>The element that has the specified key in the read-only dictionary.</returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.AKeys">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.BKeys">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.IReadOnlyTwoKeyDictionary`3.Values">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.IReadOnlyCollection`1">
+            <summary>
+            Represents a strongly-typed, read-only collection of elements.
+            </summary>
+            <typeparam name="T">The type of the elements.</typeparam>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.IReadOnlyCollection`1.Count">
+            <summary>
+            Gets the number of elements in the collection.
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.ITwoKeyDictionary`3">
+            <summary>
+            Represents a generic collection of A-key, B-key/value triple.
+            </summary>
+            <typeparam name="TKeyA">The type of A-key in the dictionary.</typeparam>
+            <typeparam name="TKeyB">The type of B-key in the dictionary.</typeparam>
+            <typeparam name="TValue">The type of values in the dictionary.</typeparam>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.Item(`0)">
+            <summary>
+            Gets or sets the element with the specified key.
+            </summary>
+            <param name="keyA">The key of the element to get or set.</param>
+            <returns>The element with the specified key.</returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.Item(`1)">
+            <summary>
+            Gets or sets the element with the specified key.
+            </summary>
+            <param name="keyB">The key of the element to get or set.</param>
+            <returns>The element with the specified key.</returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.AKeys">
+            <summary>
+            Gets a collection of A-key in this dictionary.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.BKeys">
+            <summary>
+             Gets a collection of B-key in this dictionary.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.Values">
+            <summary>
+             Gets a collection of Values in this dictionary.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.ContainsKeyA(`0)">
+            <summary>
+            Determines whether the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key.
+            </summary>
+            <param name="keyA">The key to locate in the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <returns>true if the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.ContainsKeyB(`1)">
+            <summary>
+            Determines whether the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key.
+            </summary>
+            <param name="keyB">The key to locate in the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <returns>true if the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.Add(`0,`1,`2)">
+            <summary>
+            Adds an element with the provided key and value to the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="keyA">The object to use as the A-key of the element to add.</param>
+            <param name="keyB">The object to use as the B-key of the element to add.</param>
+            <param name="value">The object to use as the value of the element to add.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.RemoveKeyA(`0)">
+            <summary>
+            Removes the element with the specified key from the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="keyA">The A-key of the element to remove.</param>
+            <returns>true if the element is successfully removed; otherwise, false. This method also returns false if key was not found in the original ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.RemoveKeyB(`1)">
+            <summary>
+            Removes the element with the specified key from the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="keyB">The B-key of the element to remove.</param>
+            <returns>true if the element is successfully removed; otherwise, false. This method also returns false if key was not found in the original ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.TryGetValueKeyA(`0,`2@)">
+            <summary>
+            Gets the value associated with the specified A-key.
+            </summary>
+            <param name="keyA">The A-key whose value to get.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+            <returns>true if the object that implements ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.ITwoKeyDictionary`3.TryGetValueKeyB(`1,`2@)">
+            <summary>
+            Gets the value associated with the specified A-key.
+            </summary>
+            <param name="keyB">The B-key whose value to get.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+            <returns>true if the object that implements ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3">
+            <summary>
+            Represents a collection of A-keys, B-Keys and values.
+            </summary>
+            <typeparam name="TKeyA">The type of the A-keys in the dictionary.</typeparam>
+            <typeparam name="TKeyB">The type of the B-keys in the dictionary.</typeparam>
+            <typeparam name="TValue">The type of the values in the dictionary.</typeparam>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the default equality comparer for the key type.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the specified initial capacity, and uses the default equality comparer for the key type.
+            </summary>
+            <param name="capacity">The initial number of elements that the Dictionary&lt;TKeyA,TKeyB,TValue&gt; can contain.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Collections.Generic.IEqualityComparer{`1})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the specified IEqualityComparer&lt;TKeyA&gt; and IEqualityComparer&lt;TKeyB&gt;.
+            </summary>
+            <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default IEqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+            <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default IEqualityComparer&lt;TKeyB&gt; for the type of the key.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the specified IEqualityComparer&lt;TKeyA&gt;.
+            </summary>
+            <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default IEqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Collections.Generic.IEqualityComparer{`1})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the default initial capacity, and uses the specified IEqualityComparer&lt;TKeyB&gt;.
+            </summary>
+            <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyB&gt; for the type of the key.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer{`0},System.Collections.Generic.IEqualityComparer{`1})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class that is empty, has the specified initial capacity, and uses the specified IEqualityComparer&lt;TKeyA&gt; and IEqualityComparer&lt;TKeyB&gt;.
+            </summary>
+            <param name="capacity">The initial number of elements that the Dictionary&lt;TKeyA,TKeyB,TValue&gt; can contain.</param>
+            <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+            <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyB&gt;> for the type of the key.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; and uses the default equality comparer for the key type.
+            </summary>
+            <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose elements are copied to the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2},System.Collections.Generic.IEqualityComparer{`0},System.Collections.Generic.IEqualityComparer{`1})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; and uses the IEqualityComparer&lt;TKeyA&gt; and IEqualityComparer&lt;TKeyB&gt;.
+            </summary>
+            <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose elements are copied to the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <param name="comparerA">The IEqualityComparer&lt;TKeyA&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyA&gt; for the type of the key.</param>
+            <param name="comparerB">The IEqualityComparer&lt;TKeyB&gt; implementation to use when comparing keys, or null to use the default EqualityComparer&lt;TKeyB&gt; for the type of the key.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt; class with serialized data.
+            </summary>
+            <param name="info">A SerializationInfo object containing the information required to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <param name="context">A StreamingContext structure containing the source and destination of the serialized stream associated with the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.AKeys">
+            <summary>
+            Gets a collection containing the A-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#ITwoKeyDictionary#AKeys">
+            <summary>
+            Gets a collection containing the A-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#Generic#IReadOnlyTwoKeyDictionary{TKeyA,TKeyB,TValue}#AKeys">
+            <summary>
+            Gets a collection containing the A-keys of the IReadOnlyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.BKeys">
+            <summary>
+            Gets a collection containing the B-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#ITwoKeyDictionary#BKeys">
+            <summary>
+            Gets a collection containing the B-keys in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#Generic#IReadOnlyTwoKeyDictionary{TKeyA,TKeyB,TValue}#BKeys">
+            <summary>
+            Gets a collection containing the B-keys of the IReadOnlyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Count">
+            <summary>
+            Gets the number of A-key/B-Key/value triple contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.IsFixedSize">
+            <summary>
+            Gets a value that indicates whether the IDictionary has a fixed size.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.IsReadOnly">
+            <summary>
+            Gets a value that indicates whether the dictionary is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.IsSynchronized">
+            <summary>
+            Gets a value that indicates whether access to the ICollection is synchronized(thread safe).
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the ICollection.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Values">
+            <summary>
+            Gets a collection containing the values in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#ITwoKeyDictionary#Values">
+            <summary>
+             Gets a collection containing the values in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#Generic#IReadOnlyTwoKeyDictionary{TKeyA,TKeyB,TValue}#Values">
+            <summary>
+            Gets a collection containing the values of the IReadOnlyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Item(System.Object)">
+            <summary>
+            Gets or sets the value with the specified key.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Item(`1)">
+            <summary>
+            Gets or sets the value associated with the specified B-key.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Item(`0)">
+            <summary>
+            Gets or sets the value associated with the specified A-key.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Add(`0,`1,`2)">
+            <summary>
+            Adds the specified key and value to the dictionary.
+            </summary>
+            <param name="keyA">The A-key of the element to add.</param>
+            <param name="keyB">The B-key of the element to add.</param>
+            <param name="value">The value of the element to add. The value can be null for reference types.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Add(Ekstrand.Collections.Generic.TwoKeyValueTriple{`0,`1,`2})">
+            <summary>
+            Adds the specified value to the ICollection&lt;T&gt; with the specified key.
+            </summary>
+            <param name="item">The TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; structure representing the key and value to add to the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Add(System.Object,System.Object,System.Object)">
+            <summary>
+            Adds the specified key and value to the dictionary.
+            </summary>
+            <param name="keyA">The object to use as the A-key.</param>
+            <param name="keyB">The object to use as the B-key.</param>
+            <param name="value">The object to use as the value.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Clear">
+            <summary>
+            Removes all keys and values from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Contains(Ekstrand.Collections.Generic.TwoKeyValueTriple{`0,`1,`2})">
+            <summary>
+            Determines whether the ICollection&lt;T&gt; contains a specific key and value.
+            </summary>
+            <param name="item">The KeyValuePair&lt;TKeyA,TKeyB,TValue&gt; structure to locate in the ICollection&lt;T&gt;.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Contains(System.Object)">
+            <summary>
+            The key to locate in the IDictionary.
+            </summary>
+            <param name="key">The key to locate in the IDictionary.</param>
+            <returns>true if the IDictionary contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ContainsKeyA(`0)">
+            <summary>
+             Determines whether the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains the specified A-key.
+            </summary>
+            <param name="keyA">The A-key to locate in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <returns>true if the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ContainsKeyB(`1)">
+            <summary>
+            Determines whether the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains the specified B-key.
+            </summary>
+            <param name="keyB">The B-key to locate in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <returns>true if the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ContainsValue(`2)">
+            <summary>
+            Determines whether the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains a specific value.
+            </summary>
+            <param name="value">The value to locate in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;. The value can be null for reference types.</param>
+            <returns>true if theDictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified value; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.CopyTo(Ekstrand.Collections.Generic.TwoKeyValueTriple{`0,`1,`2}[],System.Int32)">
+            <summary>
+            Copies the elements of the ICollection&lt;T&gt; to an array of type TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;, starting at the specified array index.
+            </summary>
+            <param name="array">The one-dimensional array of type TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; that is the destination of the TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; elements copied from the ICollection&lt;T&gt;. The array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the ICollection&lt;T&gt; to an array, starting at the specified array index.
+            </summary>
+            <param name="array">The one-dimensional array that is the destination of the elements copied from ICollection&lt;T&gt;. The array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+            <remarks>This method is not implemented</remarks>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <returns>A TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;. Enumerator structure for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <returns>>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.Enumerator structure for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Ekstrand#Collections#ITwoKeyDictionary#GetEnumerator">
+            <summary>
+            Returns an IDictionaryEnumerator for the IDictionary.
+            </summary>
+            <returns>An IDictionaryEnumerator for the IDictionary.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Implements the ISerializable interface and returns the data needed to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.
+            </summary>
+            <param name="info">A SerializationInfo object that contains the information required to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.</param>
+            <param name="context">A StreamingContext structure that contains the source and destination of the serialized stream associated with the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.OnDeserialization(System.Object)">
+            <summary>
+            Implements the ISerializable interface and raises the deserialization event when the deserialization is complete.
+            </summary>
+            <param name="sender">The source of the deserialization event.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(Ekstrand.Collections.Generic.TwoKeyValueTriple{`0,`1,`2})">
+            <summary>
+            Removes a A-key, B-key and value from the dictionary.
+            </summary>
+            <param name="item">The TwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt; structure representing the key and value to remove from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</param>
+            <returns>true if the key and value represented by TwoKeyValueTriple is successfully found and removed; otherwise, false. This method returns false if keyValuePair is not found in the ICollection&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(`0)">
+            <summary>
+            Removes the value with the specified A-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+            <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(`1)">
+            <summary>
+            Removes the value with the specified B-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+            <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Remove(System.Object)">
+            <summary>
+            Removes the element with the specified key from the IDictionary.
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.RemoveKeyA(`0)">
+            <summary>
+            Removes the value with the specified A-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="keyA">The key of the element to remove.</param>
+            <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.RemoveKeyB(`1)">
+            <summary>
+            Removes the value with the specified B-key from the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="keyB">The key of the element to remove.</param>
+            <returns>true if the element is successfully found and removed; otherwise, false. This method returns false if key is not found in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.TryGetValueKeyA(`0,`2@)">
+            <summary>
+            Gets the value associated with the specified A-key.
+            </summary>
+            <param name="keyA">The key of the value to get.</param>
+            <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+            <returns>true if the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.TryGetValueKeyB(`1,`2@)">
+            <summary>
+            Gets the value associated with the specified B-key.
+            </summary>
+            <param name="keyB">The key of the value to get.</param>
+            <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+            <returns>true if the Dictionary&lt;TKeyA,TKeyB,TValue&gt; contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator">
+            <summary>
+            Enumerates the elements of a Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.Current">
+            <summary>
+            The element in the Dictionary&lt;TKeyA,TKeyB,TValue&gt; at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.System#Collections#IEnumerator#Current">
+            <summary>
+            The element in the collection at the current position of the enumerator, as an Object.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.Ekstrand#Collections#ITwoKeyDictionaryEnumerator#Entry">
+            <summary>
+            The element in the dictionary at the current position of the enumerator, as a DictionaryEntry.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.Ekstrand#Collections#ITwoKeyDictionaryEnumerator#AKey">
+            <summary>
+            Gets the A-key of the element at the current position of the enumerator.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.Ekstrand#Collections#ITwoKeyDictionaryEnumerator#BKey">
+            <summary>
+            Gets the B-key of the element at the current position of the enumerator.
+            </summary>
+            /// <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.Ekstrand#Collections#ITwoKeyDictionaryEnumerator#Value">
+            <summary>
+            Gets the value of the element at the current position of the enumerator.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.Dispose">
+            <summary>
+            Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.Enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+            <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.Enumerator.System#Collections#IEnumerator#Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection">
+            <summary>
+            Represents the collection of A-keys in a Dictionary&lt;TKeyA,TKeyB,TValue&gt;. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection class that reflects the A-keys in the specified Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose keys are reflected in the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Count">
+            <summary>
+            Gets the number of elements contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#Generic#ICollection{TKeyA}#IsReadOnly">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#ICollection#IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#ICollection#SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the ICollection.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#Generic#ICollection{TKeyA}#Add(`0)">
+            <summary>
+            Adds an item to the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+            <param name="item">The object to add to the ICollection&lt;T&gt;.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#Generic#ICollection{TKeyA}#Clear">
+            <summary>
+            Removes all items from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#Generic#ICollection{TKeyA}#Contains(`0)">
+            <summary>
+            Determines whether the ICollection&lt;T&gt; contains a specific value.
+            </summary>
+            <param name="item">The object to locate in the ICollection&lt;T&gt;.</param>
+            <returns>true if item is found in the ICollection&lt;T&gt;; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection elements to an existing one-dimensional Array, starting at the specified array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the elements copied from Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection. The Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the elements copied from ICollection. The Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            </summary>
+            <returns>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.Enumerator for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#Generic#IEnumerable{TKeyA}#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+             Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.System#Collections#Generic#ICollection{TKeyA}#Remove(`0)">
+            <summary>
+            Removes the first occurrence of a specific object from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+            <param name="item">The object to remove from the ICollection&lt;T&gt;.</param>
+            <returns>true if item was successfully removed from the ICollection&lt;T&gt;; otherwise, false. This method also returns false if item was not found in the original ICollection&lt;T&gt;.</returns>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator">
+            <summary>
+            Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+             Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            </summary>
+            <param name="dictionary">TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; to enumerate TKeyA.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator.Current">
+            <summary>
+            Gets the element at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator.System#Collections#IEnumerator#Current">
+            <summary>
+            Gets the element at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator.Dispose">
+            <summary>
+            Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyACollection.
+            </summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyACollection.Enumerator.System#Collections#IEnumerator#Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection">
+            <summary>
+            Represents the collection of A-keys in a Dictionary&lt;TKeyA,TKeyB,TValue&gt;. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection class that reflects the A-keys in the specified Dictionary&lt;TKeyA,TKeyB,TValue&gt;
+            </summary>
+            <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose keys are reflected in the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Count">
+            <summary>
+            Gets the number of elements contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#Generic#ICollection{TKeyB}#IsReadOnly">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#ICollection#IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#ICollection#SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the ICollection.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#Generic#ICollection{TKeyB}#Add(`1)">
+            <summary>
+            Adds an item to the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+            <param name="item">The object to add to the ICollection&lt;T&gt;.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#Generic#ICollection{TKeyB}#Clear">
+            <summary>
+            Removes all items from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#Generic#ICollection{TKeyB}#Contains(`1)">
+            <summary>
+            Determines whether the ICollection&lt;T&gt; contains a specific value.
+            </summary>
+            <param name="item">The object to locate in the ICollection&lt;T&gt;.</param>
+            <returns>true if item is found in the ICollection&lt;T&gt;; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.CopyTo(`1[],System.Int32)">
+            <summary>
+            Copies the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection elements to an existing one-dimensional Array, starting at the specified array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the elements copied from Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection. The Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the elements copied from ICollection. The Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            </summary>
+            <returns>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.Enumerator for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#Generic#IEnumerable{TKeyB}#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+             Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.System#Collections#Generic#ICollection{TKeyB}#Remove(`1)">
+            <summary>
+            Removes the first occurrence of a specific object from the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+            <param name="item">The object to remove from the ICollection&lt;T&gt;.</param>
+            <returns>true if item was successfully removed from the ICollection&lt;T&gt;; otherwise, false. This method also returns false if item was not found in the original ICollection&lt;T&gt;.</returns>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator">
+            <summary>
+            Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+            Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyCollection.
+            </summary>
+            <param name="dictionary">TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt; to enumerate TKeyB.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator.Current">
+            <summary>
+            Gets the element at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator.System#Collections#IEnumerator#Current">
+            <summary>
+            Gets the element at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator.Dispose">
+            <summary>
+            Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.KeyBCollection.
+            </summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.KeyBCollection.Enumerator.System#Collections#IEnumerator#Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection">
+            <summary>
+            Represents the collection of values in a Dictionary&lt;TKeyA,TKeyB,TValue&gt;. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+            Initializes a new instance of the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection class that reflects the values in the specified Dictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="dictionary">The Dictionary&lt;TKeyA,TKeyB,TValue&gt; whose values are reflected in the new Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Count">
+            <summary>
+            Gets the number of elements contained in the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#ICollection#IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#ICollection#SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the ICollection.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`2)">
+            <summary>
+            Adds an item to the ICollection&lt;T&gt;. This implementation always throws NotSupportedException.
+            </summary>
+            <param name="item">The object to add to the ICollection&lt;T&gt;.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear">
+            <summary>
+            Removes all items from the ICollection&lt;T&gt;.This implementation always throws NotSupportedException.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`2)">
+            <summary>
+            Determines whether the ICollection&lt;T&gt; contains a specific value.
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.CopyTo(`2[],System.Int32)">
+            <summary>
+            Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the elements copied from ICollection. The Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection elements to an existing one-dimensional Array, starting at the specified array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the elements copied from Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection. The Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            </summary>
+            <returns>A Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator for the Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#Generic#IEnumerable{TValue}#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator&lt;T&gt; that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator&lt;T&gt; that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator">
+            <summary>
+            Enumerates the elements of a TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator.#ctor(Ekstrand.Collections.Generic.TwoKeyDictionary{`0,`1,`2})">
+            <summary>
+            Enumerates the elements of a Dictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            </summary>
+            <param name="dictionary">Dictionary&lt;TKeyA,TKeyB,TValue&gt; to enumerate over its collection for TValues.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator.Current">
+            <summary>
+            Gets the element at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator.System#Collections#IEnumerator#Current">
+            <summary>
+            Gets the element at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator.Dispose">
+            <summary>
+            Releases all resources used by the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.Enumerator.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the TwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.ValueCollection.
+            </summary>
+            <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyDictionary`3.ValueCollection.Enumerator.System#Collections#IEnumerator#Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.Generic.TwoKeyValueTriple`3">
+            <summary>
+            Defines a A-key,B-key/value triple that can be set or retrieved.
+            </summary>
+            <typeparam name="TKeyA">The type of the A-key.</typeparam>
+            <typeparam name="TKeyB">The type of the B-key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyValueTriple`3.#ctor(`0,`1,`2)">
+            <summary>
+            Defines a A-key,B-key/value triple that can be set or retrieved.
+            </summary>
+            <param name="keyA">The type of the A-key.</param>
+            <param name="keyB">The type of the B-key.</param>
+            <param name="value">The type of the value.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyValueTriple`3.KeyA">
+            <summary>
+            Gets the A-key in the A-key,B-key/value triple.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyValueTriple`3.KeyB">
+            <summary>
+            Gets the B-key in the A-key,B-key/value triple.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.Generic.TwoKeyValueTriple`3.Value">
+            <summary>
+            Gets the value in the A-key,B-key/value triple.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.Generic.TwoKeyValueTriple`3.ToString">
+            <summary>
+            Returns a string representation of the TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;, using the string representations of the key and value.
+            </summary>
+            <returns>A string representation of the TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;, which includes the string representations of the key and value.</returns>
+        </member>
+        <member name="T:Ekstrand.Collections.ITwoKeyDictionary">
+            <summary>
+            Represents a generic collection of A-key, B-key/value triple.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionary.Item(System.Object)">
+            <summary>
+            Gets or sets the element with the specified key.
+            </summary>
+            <param name="key">The key of the element to get or set.</param>
+            <returns>The element with the specified key.</returns>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionary.AKeys">
+            <summary>
+            Gets an ICollection&lt;T&gt; containing the A-keys of the ITwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionary.BKeys">
+            <summary>
+            Gets an ICollection&lt;T&gt; containing the B-keys of the ITwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionary.Values">
+            <summary>
+            Gets an ICollection&lt;T&gt; containing the values of the ITwoKeyValueTriple&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.ITwoKeyDictionary.Contains(System.Object)">
+            <summary>
+            Determines whether the ICollection&lt;T&gt; contains a specific A/B key.
+            </summary>
+            <param name="key">The object to locate in the ICollection&lt;T&gt;.</param>
+            <returns>true if item is found in the ICollection&lt;T&gt;; otherwise, false.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.ITwoKeyDictionary.Add(System.Object,System.Object,System.Object)">
+            <summary>
+            Adds an element with the provided A-key, B-key and value to the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="keyA">The object to use as the key of the element to add.</param>
+            <param name="keyB">The object to use as the key of the element to add.</param>
+            <param name="value">he object to use as the value of the element to add.</param>
+        </member>
+        <member name="M:Ekstrand.Collections.ITwoKeyDictionary.Clear">
+            <summary>
+            Removes all items from the ICollection&lt;T&gt;.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionary.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is read-only.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionary.IsFixedSize">
+            <summary>
+            Gets a value indicating whether the ICollection&lt;T&gt; is fixed size.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.ITwoKeyDictionary.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An IEnumerator object that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Ekstrand.Collections.ITwoKeyDictionary.Remove(System.Object)">
+            <summary>
+            Removes the element with the specified key from the ITwoKeyDictionary&lt;TKeyA,TKeyB,TValue&gt;.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="T:Ekstrand.Collections.ITwoKeyDictionaryEnumerator">
+            <summary>
+            Enumerates the elements of a nongeneric dictionary.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionaryEnumerator.AKey">
+            <summary>
+            Gets the A-key of the current dictionary entry.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionaryEnumerator.BKey">
+            <summary>
+            Gets the B-key of the current dictionary entry.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionaryEnumerator.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.ITwoKeyDictionaryEnumerator.Entry">
+            <summary>
+            Gets both the A-key, B-key and the value of the current dictionary entry.
+            </summary>
+        </member>
+        <member name="T:Ekstrand.Collections.TwoKeyDictionaryEntry">
+            <summary>
+            Defines a dictionary A-key, B-key/value triple that can be set or retrieved.
+            </summary>
+        </member>
+        <member name="M:Ekstrand.Collections.TwoKeyDictionaryEntry.#ctor(System.Object,System.Object,System.Object)">
+            <summary>
+            Initializes an instance of the TwoKeyDictionaryEntry type with the specified A-key, B-key and value.
+            </summary>
+            <param name="AKey">The object defined in each A-key, B-key/value triple.</param>
+            <param name="Bkey">The object defined in each A-key, B-key/value triple.</param>
+            <param name="value">The definition associated with key.</param>
+        </member>
+        <member name="P:Ekstrand.Collections.TwoKeyDictionaryEntry.AKey">
+            <summary>
+            Gets or sets the A-key in the A-key, B-key/value triple.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.TwoKeyDictionaryEntry.BKey">
+            <summary>
+            Gets or sets the A-key in the A-key, B-key/value triple.
+            </summary>
+        </member>
+        <member name="P:Ekstrand.Collections.TwoKeyDictionaryEntry.Value">
+            <summary>
+            Gets or sets the value in the A-key, B-key/value triple.
+            </summary>
+        </member>
+    </members>
+</doc>

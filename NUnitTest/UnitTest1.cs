@@ -324,7 +324,7 @@ namespace NUnitTests
         }
 
         [Test]
-        [Category("Properties")]
+        [Category("Properties")] 
         public void SyncRoot()
         {
             TwoKeyDictionary<string, int, int> stkd = sptkd.GetLoadedTwoKeyDictionary(POPSIZE);
@@ -341,9 +341,10 @@ namespace NUnitTests
                 }
             }
 
-            int size = _result.Count;
+ 
+            Assert.AreEqual(12, _result.Count);
             Assert.AreEqual("main thread  0", _result[0]);
-            Assert.AreEqual("main thread  12", _result[23]);
+            Assert.AreEqual("main thread  12", _result[11]);
         }
 
         static PackTwoKeyDictionary sptkd = new PackTwoKeyDictionary();

@@ -1,6 +1,5 @@
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.pdb
-C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\nunit.engine.netstandard.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\NUnitTest.deps.json
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\NUnitTest.runtimeconfig.json
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\NUnitTest.runtimeconfig.dev.json
@@ -13,7 +12,6 @@ C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft.TestPlatform.CommunicationUtilities.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft.TestPlatform.CrossPlatEngine.dll
-C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft.TestPlatform.Utilities.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\testhost.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
@@ -84,11 +82,17 @@ C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hans\M
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionaryMain.dll
-C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionaryMain.pdb
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.csprojAssemblyReference.cache
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.AssemblyInfoInputs.cache
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.AssemblyInfo.cs
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.csproj.CopyComplete
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.dll
 C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\obj\Debug\netcoreapp3.0\NUnitTest.pdb
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionary.dll
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionary.pdb
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\TwoKeyDictionary.xml
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\nunit.engine.dll
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\nunit.engine.api.dll
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\testhost.exe
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\Microsoft.TestPlatform.Utilities.dll
+C:\SoftwareProjects\TwoKeyDictionary\NUnitTest\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll

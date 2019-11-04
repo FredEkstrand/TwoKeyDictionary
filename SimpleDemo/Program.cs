@@ -51,7 +51,7 @@ namespace ConsoleTester
             Console.WriteLine("CrayolaColors.RemoveKeyA(\"Bittersweet\")\n");
             CrayolaColors.RemoveKeyA("Bittersweet"); // goodbye 
 
-            Console.WriteLine("Now check if the corresponding Key-A is removed.");
+            Console.WriteLine("Now check if the Key-A has been removed.");
             bool bresult = CrayolaColors.ContainsKeyA("Bittersweet");
             Console.WriteLine("CrayolaColors.ContainsKeyA(\"Bittersweet\") {0}\n", bresult);
 
@@ -60,6 +60,50 @@ namespace ConsoleTester
             bresult = CrayolaColors.ContainsKeyB(CrayolaCrayons.Bittersweet);
             Console.WriteLine("CrayolaColors.ContainsKeyB(CrayolaCrayons.Bittersweet) {0}\n",bresult);
             Console.WriteLine("Number of CrayolaCrayons entries: {0}\n", CrayolaColors.Count);
+
+            TwoKeyDictionary<int, int, int> threeNumDic = new TwoKeyDictionary<int, int, int>();
+            threeNumDic.Add(0, 1, 66);
+            threeNumDic.Add(2, 3, 67);
+            threeNumDic.Add(4, 5, 68);
+            threeNumDic.Add(6, 7, 69);
+            threeNumDic.Add(8, 9, 70);
+            threeNumDic.Add(10, 11, 71);
+
+            Console.WriteLine();
+            Console.WriteLine("Content of a TwoKeyDictionary<int,int,int>.");
+            foreach(TwoKeyValueTriple<int,int,int> item in threeNumDic)
+            {
+                Console.WriteLine("{0}  {1}  {2}",item.KeyA,item.KeyB,item.Value);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("A-key collection.");
+            foreach (int item in threeNumDic.AKeys)
+            {
+                Console.WriteLine("{0}", item);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("B-key collection.");
+            foreach (int item in threeNumDic.BKeys)
+            {
+                Console.WriteLine("{0}", item);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("value collection.");
+            foreach (int item in threeNumDic.Values)
+            {
+                Console.WriteLine("{0}", item);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Now remove A-key 4");
+            threeNumDic.RemoveKeyA(4);
+            Console.WriteLine("Check if key is removed: {0}", !threeNumDic.ContainsKeyA(4));
+            Console.WriteLine("Check if corresponding key is removed: {0}", !threeNumDic.ContainsKeyB(5));
+            Console.WriteLine("Dictionary count: {0}", threeNumDic.Count);
+            
 
         }
 
