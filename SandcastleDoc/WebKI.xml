@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="ITwoKeyDictionary.Add Method " Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Add.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Add Method " Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Add.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AKey property">
+    <HelpKINode Title="ITwoKeyDictionaryEnumerator.AKey Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_AKey.htm" />
+    <HelpKINode Title="TwoKeyDictionaryEntry.AKey Property " Url="html/P_Ekstrand_Collections_TwoKeyDictionaryEntry_AKey.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AKeys property">
+    <HelpKINode Title="ITwoKeyDictionary.AKeys Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_AKeys.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).AKeys Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_AKeys.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BKey property">
+    <HelpKINode Title="ITwoKeyDictionaryEnumerator.BKey Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_BKey.htm" />
+    <HelpKINode Title="TwoKeyDictionaryEntry.BKey Property " Url="html/P_Ekstrand_Collections_TwoKeyDictionaryEntry_BKey.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BKeys property">
+    <HelpKINode Title="ITwoKeyDictionary.BKeys Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_BKeys.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).BKeys Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_BKeys.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Clear method">
+    <HelpKINode Title="ITwoKeyDictionary.Clear Method " Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Clear.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Clear Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Clear.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Contains method">
+    <HelpKINode Title="ITwoKeyDictionary.Contains Method " Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Contains.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Contains Method " Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Contains.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ContainsKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsKeyA.htm" />
+  <HelpKINode Title="ContainsKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsKeyB.htm" />
+  <HelpKINode Title="ContainsValue method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsValue.htm" />
+  <HelpKINode Title="CopyTo method">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).CopyTo Method " Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_CopyTo.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.CopyTo Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_CopyTo.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.CopyTo Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_CopyTo.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.CopyTo Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_CopyTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Count property">
+    <HelpKINode Title="IReadOnlyCollection(T).Count Property " Url="html/P_Ekstrand_Collections_Generic_IReadOnlyCollection_1_Count.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Count Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Count.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.Count Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Count.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.Count Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Count.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.Count Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Count.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Current property">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Enumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Current.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.Enumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_Current.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_Current.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.Enumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_Current.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Enumerator.Dispose Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Dispose.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.Enumerator.Dispose Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_Dispose.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.Dispose Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_Dispose.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.Enumerator.Dispose Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ekstrand.Collections namespace" Url="html/N_Ekstrand_Collections.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic namespace" Url="html/N_Ekstrand_Collections_Generic.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.IReadOnlyCollection(Of T) interface" Url="html/T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.IReadOnlyCollection&lt;T&gt; interface" Url="html/T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue) class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt; class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyValueTriple(Of TKeyA, TKeyB, TValue) structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+  <HelpKINode Title="Ekstrand.Collections.Generic.TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt; structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+  <HelpKINode Title="Ekstrand.Collections.ITwoKeyDictionary interface" Url="html/T_Ekstrand_Collections_ITwoKeyDictionary.htm" />
+  <HelpKINode Title="Ekstrand.Collections.ITwoKeyDictionaryEnumerator interface" Url="html/T_Ekstrand_Collections_ITwoKeyDictionaryEnumerator.htm" />
+  <HelpKINode Title="Ekstrand.Collections.TwoKeyDictionaryEntry structure" Url="html/T_Ekstrand_Collections_TwoKeyDictionaryEntry.htm" />
+  <HelpKINode Title="Entry property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Entry.htm" />
+  <HelpKINode Title="Enumerator structure">
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetEnumerator method">
+    <HelpKINode Title="ITwoKeyDictionary.GetEnumerator Method " Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_GetEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetObjectData method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_GetObjectData.htm" />
+  <HelpKINode Title="ICollection(Of TKeyA).Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Add.htm" />
+  <HelpKINode Title="ICollection(Of TKeyA).Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Clear.htm" />
+  <HelpKINode Title="ICollection(Of TKeyA).Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Contains.htm" />
+  <HelpKINode Title="ICollection(Of TKeyA).IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_IsReadOnly.htm" />
+  <HelpKINode Title="ICollection(Of TKeyA).Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Remove.htm" />
+  <HelpKINode Title="ICollection(Of TKeyB).Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Add.htm" />
+  <HelpKINode Title="ICollection(Of TKeyB).Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Clear.htm" />
+  <HelpKINode Title="ICollection(Of TKeyB).Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Contains.htm" />
+  <HelpKINode Title="ICollection(Of TKeyB).IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_IsReadOnly.htm" />
+  <HelpKINode Title="ICollection(Of TKeyB).Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Remove.htm" />
+  <HelpKINode Title="ICollection(Of TValue).Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Add.htm" />
+  <HelpKINode Title="ICollection(Of TValue).Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Clear.htm" />
+  <HelpKINode Title="ICollection(Of TValue).Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Contains.htm" />
+  <HelpKINode Title="ICollection(Of TValue).IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_IsReadOnly.htm" />
+  <HelpKINode Title="ICollection(Of TValue).Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Remove.htm" />
+  <HelpKINode Title="ICollection.CopyTo explicitly implemented method">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.ICollection.CopyTo Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_CopyTo.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.ICollection.CopyTo Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_CopyTo.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.ICollection.CopyTo Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_CopyTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICollection.IsSynchronized explicitly implemented property">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.ICollection.IsSynchronized Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_IsSynchronized.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.ICollection.IsSynchronized Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_IsSynchronized.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.ICollection.IsSynchronized Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_IsSynchronized.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICollection.SyncRoot explicitly implemented property">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.ICollection.SyncRoot Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_SyncRoot.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.ICollection.SyncRoot Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_SyncRoot.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.ICollection.SyncRoot Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_SyncRoot.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICollection&lt;TKeyA&gt;.Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Add.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyA&gt;.Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Clear.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyA&gt;.Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Contains.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyA&gt;.IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_IsReadOnly.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyA&gt;.Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Remove.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyB&gt;.Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Add.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyB&gt;.Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Clear.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyB&gt;.Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Contains.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyB&gt;.IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_IsReadOnly.htm" />
+  <HelpKINode Title="ICollection&lt;TKeyB&gt;.Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Remove.htm" />
+  <HelpKINode Title="ICollection&lt;TValue&gt;.Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Add.htm" />
+  <HelpKINode Title="ICollection&lt;TValue&gt;.Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Clear.htm" />
+  <HelpKINode Title="ICollection&lt;TValue&gt;.Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Contains.htm" />
+  <HelpKINode Title="ICollection&lt;TValue&gt;.IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_IsReadOnly.htm" />
+  <HelpKINode Title="ICollection&lt;TValue&gt;.Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Remove.htm" />
+  <HelpKINode Title="IEnumerable(Of TKeyA).GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_IEnumerable{TKeyA}_GetEnumerator.htm" />
+  <HelpKINode Title="IEnumerable(Of TKeyB).GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_IEnumerable{TKeyB}_GetEnumerator.htm" />
+  <HelpKINode Title="IEnumerable(Of TValue).GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_IEnumerable{TValue}_GetEnumerator.htm" />
+  <HelpKINode Title="IEnumerable.GetEnumerator explicitly implemented method">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).IEnumerable.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_System_Collections_IEnumerable_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.IEnumerable.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.IEnumerable.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.IEnumerable.GetEnumerator Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEnumerable&lt;TKeyA&gt;.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_IEnumerable{TKeyA}_GetEnumerator.htm" />
+  <HelpKINode Title="IEnumerable&lt;TKeyB&gt;.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_IEnumerable{TKeyB}_GetEnumerator.htm" />
+  <HelpKINode Title="IEnumerable&lt;TValue&gt;.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_IEnumerable{TValue}_GetEnumerator.htm" />
+  <HelpKINode Title="IEnumerator.Current explicitly implemented property">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Enumerator.IEnumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_System_Collections_IEnumerator_Current.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.Enumerator.IEnumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.IEnumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.Enumerator.IEnumerator.Current Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEnumerator.Reset explicitly implemented method">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Enumerator.IEnumerator.Reset Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.Enumerator.IEnumerator.Reset Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.IEnumerator.Reset Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.Enumerator.IEnumerator.Reset Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IReadOnlyCollection(Of T) interface">
+    <HelpKINode Title="IReadOnlyCollection(T) Interface" Url="html/T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IReadOnlyCollection(Of T).Count property" Url="html/P_Ekstrand_Collections_Generic_IReadOnlyCollection_1_Count.htm" />
+  <HelpKINode Title="IReadOnlyCollection&lt;T&gt; interface">
+    <HelpKINode Title="IReadOnlyCollection(T) Interface" Url="html/T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_IReadOnlyCollection_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IReadOnlyCollection&lt;T&gt;.Count property" Url="html/P_Ekstrand_Collections_Generic_IReadOnlyCollection_1_Count.htm" />
+  <HelpKINode Title="IsFixedSize property">
+    <HelpKINode Title="ITwoKeyDictionary.IsFixedSize Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_IsFixedSize.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).IsFixedSize Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsFixedSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsReadOnly property">
+    <HelpKINode Title="ITwoKeyDictionary.IsReadOnly Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_IsReadOnly.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).IsReadOnly Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsReadOnly.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.IsReadOnly Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_IsReadOnly.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.IsReadOnly Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_IsReadOnly.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsSynchronized property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsSynchronized.htm" />
+  <HelpKINode Title="Item property">
+    <HelpKINode Title="ITwoKeyDictionary.Item Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_Item.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Item Property " Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Item.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITwoKeyDictionary interface">
+    <HelpKINode Title="ITwoKeyDictionary Interface" Url="html/T_Ekstrand_Collections_ITwoKeyDictionary.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_ITwoKeyDictionary.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_ITwoKeyDictionary.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITwoKeyDictionary.Add method" Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Add.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.AKeys explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_AKeys.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.AKeys property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_AKeys.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.BKeys explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_BKeys.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.BKeys property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_BKeys.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.Clear method" Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Clear.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.Contains method" Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Contains.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_GetEnumerator.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.GetEnumerator method" Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_GetEnumerator.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.IsFixedSize property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_IsFixedSize.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.IsReadOnly property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_IsReadOnly.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.Item property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_Item.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.Remove method" Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Remove.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.Values explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_Values.htm" />
+  <HelpKINode Title="ITwoKeyDictionary.Values property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_Values.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator interface">
+    <HelpKINode Title="ITwoKeyDictionaryEnumerator Interface" Url="html/T_Ekstrand_Collections_ITwoKeyDictionaryEnumerator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_ITwoKeyDictionaryEnumerator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_ITwoKeyDictionaryEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.AKey explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_AKey.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.AKey property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_AKey.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.BKey explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_BKey.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.BKey property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_BKey.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.Entry explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Entry.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.Entry property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Entry.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.Value explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Value.htm" />
+  <HelpKINode Title="ITwoKeyDictionaryEnumerator.Value property" Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Value.htm" />
+  <HelpKINode Title="KeyA property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_KeyA.htm" />
+  <HelpKINode Title="KeyACollection class">
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KeyB property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_KeyB.htm" />
+  <HelpKINode Title="KeyBCollection class">
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MoveNext method">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Enumerator.MoveNext Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_MoveNext.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection.Enumerator.MoveNext Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_MoveNext.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.MoveNext Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_MoveNext.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection.Enumerator.MoveNext Method " Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_MoveNext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnDeserialization method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_OnDeserialization.htm" />
+  <HelpKINode Title="Remove method">
+    <HelpKINode Title="ITwoKeyDictionary.Remove Method " Url="html/M_Ekstrand_Collections_ITwoKeyDictionary_Remove.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Remove Method " Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Remove.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RemoveKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_RemoveKeyA.htm" />
+  <HelpKINode Title="RemoveKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_RemoveKeyB.htm" />
+  <HelpKINode Title="SyncRoot property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_SyncRoot.htm" />
+  <HelpKINode Title="ToString method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_ToString.htm" />
+  <HelpKINode Title="TryGetValueKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_TryGetValueKeyA.htm" />
+  <HelpKINode Title="TryGetValueKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_TryGetValueKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue) class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue) Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Add method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).AKeys property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_AKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).BKeys property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_BKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Clear method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Contains method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ContainsKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsKeyA.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ContainsKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ContainsValue method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsValue.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).CopyTo method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.ITwoKeyDictionaryEnumerator.AKey explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_AKey.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.ITwoKeyDictionaryEnumerator.BKey explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_BKey.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.ITwoKeyDictionaryEnumerator.Entry explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Entry.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.ITwoKeyDictionaryEnumerator.Value explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Value.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).GetObjectData method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_GetObjectData.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).IsFixedSize property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsFixedSize.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).IsReadOnly property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).IsSynchronized property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Item property" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Item.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ITwoKeyDictionary.AKeys explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_AKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ITwoKeyDictionary.BKeys explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_BKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ITwoKeyDictionary.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ITwoKeyDictionary.Values explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_Values.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.CopyTo method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection(Of TKeyA).Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection(Of TKeyA).Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection(Of TKeyA).Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection(Of TKeyA).IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection(Of TKeyA).Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection.CopyTo explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection.IsSynchronized explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.ICollection.SyncRoot explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.IEnumerable(Of TKeyA).GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_IEnumerable{TKeyA}_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.IsReadOnly property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyACollection.KeyACollection constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.CopyTo method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection(Of TKeyB).Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection(Of TKeyB).Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection(Of TKeyB).Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection(Of TKeyB).IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection(Of TKeyB).Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection.CopyTo explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection.IsSynchronized explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.ICollection.SyncRoot explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.IEnumerable(Of TKeyB).GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_IEnumerable{TKeyB}_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.IsReadOnly property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).KeyBCollection.KeyBCollection constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).OnDeserialization method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_OnDeserialization.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Remove method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).RemoveKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_RemoveKeyA.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).RemoveKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_RemoveKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).SyncRoot property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).TryGetValueKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_TryGetValueKeyA.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).TryGetValueKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_TryGetValueKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).TwoKeyDictionary constructor" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.CopyTo method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection(Of TValue).Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection(Of TValue).Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection(Of TValue).Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection(Of TValue).IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection(Of TValue).Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection.CopyTo explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection.IsSynchronized explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ICollection.SyncRoot explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.IEnumerable(Of TValue).GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_IEnumerable{TValue}_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).ValueCollection.ValueCollection constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary(Of TKeyA, TKeyB, TValue).Values property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Values.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt; class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue) Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Add method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.AKeys property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_AKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.BKeys property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_BKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Clear method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Contains method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ContainsKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsKeyA.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ContainsKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ContainsValue method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ContainsValue.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.CopyTo method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.ITwoKeyDictionaryEnumerator.AKey explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_AKey.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.ITwoKeyDictionaryEnumerator.BKey explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_BKey.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.ITwoKeyDictionaryEnumerator.Entry explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Entry.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.ITwoKeyDictionaryEnumerator.Value explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Value.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.GetObjectData method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_GetObjectData.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.IsFixedSize property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsFixedSize.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.IsReadOnly property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.IsSynchronized property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Item property" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Item.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ITwoKeyDictionary.AKeys explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_AKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ITwoKeyDictionary.BKeys explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_BKeys.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ITwoKeyDictionary.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ITwoKeyDictionary.Values explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Ekstrand_Collections_ITwoKeyDictionary_Values.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyACollection Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.CopyTo method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection.CopyTo explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection.IsSynchronized explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection.SyncRoot explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_ICollection_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection&lt;TKeyA&gt;.Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection&lt;TKeyA&gt;.Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection&lt;TKeyA&gt;.Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection&lt;TKeyA&gt;.IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.ICollection&lt;TKeyA&gt;.Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_ICollection{TKeyA}_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.IEnumerable&lt;TKeyA&gt;.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_System_Collections_Generic_IEnumerable{TKeyA}_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.IsReadOnly property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyACollection.KeyACollection constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyACollection__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).KeyBCollection Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.CopyTo method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection.CopyTo explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection.IsSynchronized explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection.SyncRoot explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_ICollection_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection&lt;TKeyB&gt;.Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection&lt;TKeyB&gt;.Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection&lt;TKeyB&gt;.Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection&lt;TKeyB&gt;.IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.ICollection&lt;TKeyB&gt;.Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_ICollection{TKeyB}_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.IEnumerable&lt;TKeyB&gt;.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_System_Collections_Generic_IEnumerable{TKeyB}_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.IsReadOnly property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.KeyBCollection.KeyBCollection constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_KeyBCollection__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.OnDeserialization method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_OnDeserialization.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Remove method" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.RemoveKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_RemoveKeyA.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.RemoveKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_RemoveKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.SyncRoot property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.TryGetValueKeyA method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_TryGetValueKeyA.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.TryGetValueKeyB method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_TryGetValueKeyB.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.TwoKeyDictionary constructor" Url="html/Overload_Ekstrand_Collections_Generic_TwoKeyDictionary_3__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection class">
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).ValueCollection Class" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.CopyTo method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Count property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Count.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator.Current property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator.Dispose method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_Dispose.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator.IEnumerator.Current explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_System_Collections_IEnumerator_Current.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator.IEnumerator.Reset explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_System_Collections_IEnumerator_Reset.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.Enumerator.MoveNext method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_Enumerator_MoveNext.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.GetEnumerator method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection.CopyTo explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_CopyTo.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection.IsSynchronized explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_IsSynchronized.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection.SyncRoot explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_ICollection_SyncRoot.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection&lt;TValue&gt;.Add explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Add.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection&lt;TValue&gt;.Clear explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Clear.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection&lt;TValue&gt;.Contains explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Contains.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection&lt;TValue&gt;.IsReadOnly explicitly implemented property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_IsReadOnly.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ICollection&lt;TValue&gt;.Remove explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_ICollection{TValue}_Remove.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.IEnumerable.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_IEnumerable_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.IEnumerable&lt;TValue&gt;.GetEnumerator explicitly implemented method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection_System_Collections_Generic_IEnumerable{TValue}_GetEnumerator.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.ValueCollection.ValueCollection constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionary&lt;TKeyA, TKeyB, TValue&gt;.Values property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Values.htm" />
+  <HelpKINode Title="TwoKeyDictionaryEntry structure">
+    <HelpKINode Title="TwoKeyDictionaryEntry Structure" Url="html/T_Ekstrand_Collections_TwoKeyDictionaryEntry.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_TwoKeyDictionaryEntry__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_TwoKeyDictionaryEntry.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_TwoKeyDictionaryEntry.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyDictionaryEntry.AKey property" Url="html/P_Ekstrand_Collections_TwoKeyDictionaryEntry_AKey.htm" />
+  <HelpKINode Title="TwoKeyDictionaryEntry.BKey property" Url="html/P_Ekstrand_Collections_TwoKeyDictionaryEntry_BKey.htm" />
+  <HelpKINode Title="TwoKeyDictionaryEntry.TwoKeyDictionaryEntry constructor" Url="html/M_Ekstrand_Collections_TwoKeyDictionaryEntry__ctor.htm" />
+  <HelpKINode Title="TwoKeyDictionaryEntry.Value property" Url="html/P_Ekstrand_Collections_TwoKeyDictionaryEntry_Value.htm" />
+  <HelpKINode Title="TwoKeyValueTriple(Of TKeyA, TKeyB, TValue) structure">
+    <HelpKINode Title="TwoKeyValueTriple(TKeyA, TKeyB, TValue) Structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyValueTriple(Of TKeyA, TKeyB, TValue).KeyA property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_KeyA.htm" />
+  <HelpKINode Title="TwoKeyValueTriple(Of TKeyA, TKeyB, TValue).KeyB property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_KeyB.htm" />
+  <HelpKINode Title="TwoKeyValueTriple(Of TKeyA, TKeyB, TValue).ToString method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_ToString.htm" />
+  <HelpKINode Title="TwoKeyValueTriple(Of TKeyA, TKeyB, TValue).TwoKeyValueTriple constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3__ctor.htm" />
+  <HelpKINode Title="TwoKeyValueTriple(Of TKeyA, TKeyB, TValue).Value property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_Value.htm" />
+  <HelpKINode Title="TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt; structure">
+    <HelpKINode Title="TwoKeyValueTriple(TKeyA, TKeyB, TValue) Structure" Url="html/T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyValueTriple_3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;.KeyA property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_KeyA.htm" />
+  <HelpKINode Title="TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;.KeyB property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_KeyB.htm" />
+  <HelpKINode Title="TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;.ToString method" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_ToString.htm" />
+  <HelpKINode Title="TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;.TwoKeyValueTriple constructor" Url="html/M_Ekstrand_Collections_Generic_TwoKeyValueTriple_3__ctor.htm" />
+  <HelpKINode Title="TwoKeyValueTriple&lt;TKeyA, TKeyB, TValue&gt;.Value property" Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_Value.htm" />
+  <HelpKINode Title="Value property">
+    <HelpKINode Title="ITwoKeyDictionaryEnumerator.Value Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionaryEnumerator_Value.htm" />
+    <HelpKINode Title="TwoKeyDictionaryEntry.Value Property " Url="html/P_Ekstrand_Collections_TwoKeyDictionaryEntry_Value.htm" />
+    <HelpKINode Title="TwoKeyValueTriple(TKeyA, TKeyB, TValue).Value Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyValueTriple_3_Value.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValueCollection class">
+    <HelpKINode Title="methods" Url="html/Methods_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ekstrand_Collections_Generic_TwoKeyDictionary_3_ValueCollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Values property">
+    <HelpKINode Title="ITwoKeyDictionary.Values Property " Url="html/P_Ekstrand_Collections_ITwoKeyDictionary_Values.htm" />
+    <HelpKINode Title="TwoKeyDictionary(TKeyA, TKeyB, TValue).Values Property " Url="html/P_Ekstrand_Collections_Generic_TwoKeyDictionary_3_Values.htm" />
+  </HelpKINode>
+</HelpKI>
