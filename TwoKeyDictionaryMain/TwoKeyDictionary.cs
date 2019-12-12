@@ -128,7 +128,7 @@ namespace Ekstrand.Collections.Generic
 
             foreach (TwoKeyValueTriple<TKeyA, TKeyB, TValue> triple in dictionary)
             {
-                Clone(triple.KeyA, triple.KeyB, triple.Value, true);
+                Clone(triple.KeyA, triple.KeyB, triple.Value);
             }
         }
 
@@ -345,16 +345,7 @@ namespace Ekstrand.Collections.Generic
                         int i = FindEntry(ak);
                         if (i >= 0)
                         {
-                            int k = FindEntry(entries[i].keyB);
-                            if (k >= 0)
-                            {
-                                return entries[k].value;
-                            }
-                            else
-                            {
-                                throw new KeyNotFoundException();
-                            }
-
+                            return entries[i].node.Next.Value; 
                         }
                         else
                         {
@@ -371,7 +362,7 @@ namespace Ekstrand.Collections.Generic
                         int i = FindEntry(bk);
                         if (i >= 0)
                         {
-                            return entries[i].value;
+                            return entries[i].node.Value;
                         }
                         else
                         {
@@ -428,7 +419,7 @@ namespace Ekstrand.Collections.Generic
             get
             {
                 int i = FindEntry(key);
-                if (i >= 0) return entries[i].value;
+                if (i >= 0) return entries[i].node.Value;
                 {
                     throw new KeyNotFoundException();
                 }
@@ -452,8 +443,7 @@ namespace Ekstrand.Collections.Generic
                 int i = FindEntry(key);
                 if (i >= 0)
                 {
-                    TKeyB kb = entries[i].keyB;
-                    return this[kb];
+                    return entries[i].node.Next.Value;
                 }
                 else
                 {
@@ -554,54 +544,54 @@ namespace Ekstrand.Collections.Generic
             }
         }
 
-        private void Clone(TKeyA keyA, TKeyB keyB, TValue value, bool add)
+        private void Clone(TKeyA keyA, TKeyB keyB, TValue value)
         {
 
-            if (buckets == null) Initialize(0);
-            int hashCodeB = comparerB.GetHashCode(keyB) & 0x7FFFFFFF;
-            int targetBucketB = hashCodeB % buckets.Length;
-            int hashCodeA = comparerA.GetHashCode(keyA) & 0x7FFFFFFF;
-            int targetBucketA = hashCodeA % buckets.Length;
+            if (buckets == null)
+            {
+                Initialize(0);
+            }
 
             int indexB;
             int indexA;
 
+            // Get key-A/B hash value and index
+            int hashCodeB = comparerB.GetHashCode(keyB) & 0x7FFFFFFF;
+            int hashCodeA = comparerA.GetHashCode(keyA) & 0x7FFFFFFF;
+            int targetBucketB = hashCodeB % buckets.Length;
+            int targetBucketA = hashCodeA % buckets.Length;            
+
             if (freeCount > 0)
             {
-                indexB = freeList;
-                freeList = entries[indexB].next;
-                freeCount--;
-
                 indexA = freeList;
                 freeList = entries[indexA].next;
+                freeCount--;
+
+                indexB = freeList;
+                freeList = entries[indexB].next;
                 freeCount--;
             }
             else
             {
-                if (count == entries.Length)
+                if (count == entries.Length - 1)
                 {
                     Resize();
-                    targetBucketB = hashCodeB % buckets.Length;
                     targetBucketA = hashCodeA % buckets.Length;
-                }
-                indexB = count;
-                count++;
-                if (count == entries.Length)
-                {
-                    Resize();
                     targetBucketB = hashCodeB % buckets.Length;
-                    targetBucketA = hashCodeA % buckets.Length;
                 }
                 indexA = count;
+                count++;
+
+                indexB = count;
                 count++;
             }
 
             entries[indexB].hashCode = hashCodeB;
             entries[indexB].next = buckets[targetBucketB];
-            entries[indexB].keyA = default(TKeyA);
+            entries[indexB].keyA = keyA;
             entries[indexB].keyB = keyB;
             entries[indexB].IsBkey = true;
-            entries[indexB].value = value;
+            entries[indexB].node = new EntryNode(value);
             buckets[targetBucketB] = indexB;
             version++;
 
@@ -610,6 +600,8 @@ namespace Ekstrand.Collections.Generic
             entries[indexA].keyA = keyA;
             entries[indexA].keyB = keyB;
             entries[indexA].IsBkey = false;
+            entries[indexA].node = new EntryNode();
+            entries[indexA].node.Next = entries[indexB].node;
             buckets[targetBucketA] = indexA;
             version++;
         }
@@ -622,7 +614,7 @@ namespace Ekstrand.Collections.Generic
         public bool Contains(TwoKeyValueTriple<TKeyA, TKeyB, TValue> item)
         {
             int i = FindEntry(item.KeyB);
-            if (i >= 0 && EqualityComparer<TValue>.Default.Equals(entries[i].value, item.Value))
+            if (i >= 0 && EqualityComparer<TValue>.Default.Equals(entries[i].node.Value, item.Value))
             {
                 return true;
             }
@@ -687,7 +679,7 @@ namespace Ekstrand.Collections.Generic
             {
                 for (int i = 0; i < count; i++)
                 {
-                    if (entries[i].hashCode >= 0 && entries[i].value == null) return true;
+                    if (entries[i].hashCode >= 0 && entries[i].node == null) return true;
                 }
             }
             else
@@ -695,7 +687,7 @@ namespace Ekstrand.Collections.Generic
                 EqualityComparer<TValue> c = EqualityComparer<TValue>.Default;
                 for (int i = 0; i < count; i++)
                 {
-                    if (entries[i].hashCode >= 0 && c.Equals(entries[i].value, value)) return true;
+                    if (entries[i].hashCode >= 0 && c.Equals(entries[i].node.Value, value)) return true;
                 }
             }
             return false;
@@ -771,7 +763,7 @@ namespace Ekstrand.Collections.Generic
             {
                 if (entries[i].IsBkey)
                 {
-                    array[index++] = new TwoKeyValueTriple<TKeyA, TKeyB, TValue>(entries[i].keyA, entries[i].keyB, entries[i].value);
+                    array[index++] = new TwoKeyValueTriple<TKeyA, TKeyB, TValue>(entries[i].keyA, entries[i].keyB, entries[i].node.Value);
 
                 }                
             }
@@ -847,7 +839,7 @@ namespace Ekstrand.Collections.Generic
             int i = FindEntry(key);
             if (i >= 0)
             {
-                return entries[i].value;
+                return entries[i].node.Next.Value;
             }
             return default(TValue);
         }
@@ -857,7 +849,7 @@ namespace Ekstrand.Collections.Generic
             int i = FindEntry(key);
             if (i >= 0)
             {
-                return entries[i].value;
+                return entries[i].node.Value;
             }
             return default(TValue);
         }
@@ -887,12 +879,13 @@ namespace Ekstrand.Collections.Generic
                 Initialize(0);
             }
 
-            // get b-key hash value and index
-            int hashCodeB = comparerB.GetHashCode(keyB) & 0x7FFFFFFF;
-            int targetBucketB = hashCodeB % buckets.Length;
+            int indexB;
+            int indexA;
 
-            // get a-key hash value and index
+            // Get key-A/B hash value and index
+            int hashCodeB = comparerB.GetHashCode(keyB) & 0x7FFFFFFF;
             int hashCodeA = comparerA.GetHashCode(keyA) & 0x7FFFFFFF;
+            int targetBucketB = hashCodeB % buckets.Length;
             int targetBucketA = hashCodeA % buckets.Length;
 
             // checking for duplicate keyAs
@@ -904,7 +897,7 @@ namespace Ekstrand.Collections.Generic
                     {
                         throw new ArgumentException("Adding Duplicate AKey");
                     }
-                    entries[i].value = value;
+                    entries[i].node.Value = value;
                     version++;
                     return;
                 }
@@ -919,35 +912,18 @@ namespace Ekstrand.Collections.Generic
                     {
                         throw new ArgumentException("Adding Duplicate BKey");
                     }
-                    entries[i].value = value;
+                    entries[i].node.Value = value;
                     version++;
                     return;
                 }
             }
-
-            int indexB;
-            int indexA;
-
 
             if (freeCount > 0)
             {
                 indexA = freeList;
                 freeList = entries[indexA].next;
                 freeCount--;
-            }
-            else
-            {
-                if (count == entries.Length - 1)
-                {
-                    Resize();
-                    targetBucketA = hashCodeA % buckets.Length;
-                }
-                indexA = count;
-                count++;
-            }
 
-            if (freeCount > 0)
-            {
                 indexB = freeList;
                 freeList = entries[indexB].next;
                 freeCount--;
@@ -957,8 +933,12 @@ namespace Ekstrand.Collections.Generic
                 if (count == entries.Length - 1)
                 {
                     Resize();
+                    targetBucketA = hashCodeA % buckets.Length;
                     targetBucketB = hashCodeB % buckets.Length;
                 }
+                indexA = count;
+                count++;
+
                 indexB = count;
                 count++;
             }
@@ -968,7 +948,7 @@ namespace Ekstrand.Collections.Generic
             entries[indexB].keyA = keyA;
             entries[indexB].keyB = keyB;
             entries[indexB].IsBkey = true;
-            entries[indexB].value = value;
+            entries[indexB].node = new EntryNode(value);
             buckets[targetBucketB] = indexB;
             version++;
 
@@ -977,9 +957,10 @@ namespace Ekstrand.Collections.Generic
             entries[indexA].keyA = keyA;
             entries[indexA].keyB = keyB;
             entries[indexA].IsBkey = false;
+            entries[indexA].node = new EntryNode();
+            entries[indexA].node.Next = entries[indexB].node;
             buckets[targetBucketA] = indexA;
             version++;
-
         }
 
         private void Insert(TKeyA keyA, TValue value, bool add)
@@ -995,7 +976,6 @@ namespace Ekstrand.Collections.Generic
                 throw new ArgumentException("KeyA not member of set");
             }
 
-
             int hashCode = comparerA.GetHashCode(keyA) & 0x7FFFFFFF;
             int targetBucket = hashCode % buckets.Length;
 
@@ -1003,7 +983,7 @@ namespace Ekstrand.Collections.Generic
             {
                 if (entries[i].hashCode == hashCode && comparerA.Equals(entries[i].keyA, keyA))
                 {
-                    entries[i].value = value;
+                    entries[i].node.Next.Value = value;
                     version++;
                     return;
                 }
@@ -1030,7 +1010,7 @@ namespace Ekstrand.Collections.Generic
             {
                 if (entries[i].hashCode == hashCode && comparerB.Equals(entries[i].keyB, keyB))
                 {
-                    entries[i].value = value;
+                    entries[i].node.Value = value;
                     version++;
                     return;
                 }
@@ -1200,7 +1180,7 @@ namespace Ekstrand.Collections.Generic
                         keyb = entries[i].keyB;
                         entries[i].keyA = default(TKeyA);
                         entries[i].keyB = default(TKeyB);
-                        entries[i].value = default(TValue);
+                        entries[i].node.Value = default(TValue);
                         entries[i].IsBkey = false;
                         freeList = i;
                         freeCount++;
@@ -1248,7 +1228,7 @@ namespace Ekstrand.Collections.Generic
                         keyA = entries[i].keyA;
                         entries[i].keyA = default(TKeyA);
                         entries[i].keyB = default(TKeyB);
-                        entries[i].value = default(TValue);
+                        entries[i].node.Value = default(TValue);
                         entries[i].IsBkey = false;
                         freeList = i;
                         freeCount++;
@@ -1320,9 +1300,7 @@ namespace Ekstrand.Collections.Generic
             int i = FindEntry(keyA);
             if (i >= 0)
             {
-                // b-key holds the value
-                i = FindEntry(entries[i].keyB);
-                value = entries[i].value;
+                value = entries[i].node.Next.Value;
                 return true;
             }
             value = default(TValue);
@@ -1340,7 +1318,7 @@ namespace Ekstrand.Collections.Generic
             int i = FindEntry(keyB);
             if (i >= 0)
             {
-                value = entries[i].value;
+                value = entries[i].node.Value;
                 return true;
             }
             value = default(TValue);
@@ -1511,7 +1489,6 @@ namespace Ekstrand.Collections.Generic
                     if (dictionary.entries[index].hashCode >= 0)
                     {
                         Next();
-                        //current = new TwoKeyValueTriple<TKeyA, TKeyB, TValue>(dictionary.entries[index].keyA, dictionary.entries[index].keyB, dictionary.entries[index].value);
                         index += 2;
                         return true;
                     }
@@ -1530,8 +1507,7 @@ namespace Ekstrand.Collections.Generic
                     index ++;
                     Next();
                 }
-                current = new TwoKeyValueTriple<TKeyA, TKeyB, TValue>(dictionary.entries[index].keyA, dictionary.entries[index].keyB, dictionary.entries[index].value);
-
+                current = new TwoKeyValueTriple<TKeyA, TKeyB, TValue>(dictionary.entries[index].keyA, dictionary.entries[index].keyB, dictionary.entries[index].node.Value);
             }
 
             /// <summary>
@@ -2415,7 +2391,7 @@ namespace Ekstrand.Collections.Generic
                 {
                     if (entries[i].IsBkey == true)
                     {
-                        array[index++] = entries[i].value;
+                        array[index++] = entries[i].node.Value;
                     }
                 }
             }
@@ -2469,7 +2445,7 @@ namespace Ekstrand.Collections.Generic
                     {
                         for (int i = 0; i < count; i++)
                         {
-                            if (entries[i].hashCode >= 0) objects[index++] = entries[i].value;
+                            if (entries[i].hashCode >= 0) objects[index++] = entries[i].node;
                         }
                     }
                     catch (ArrayTypeMismatchException)
@@ -2620,7 +2596,7 @@ namespace Ekstrand.Collections.Generic
                         index++;
                         Next();
                     }
-                    currentValue = dictionary.entries[index].value;
+                    currentValue = dictionary.entries[index].node.Value;
                 }
 
                 /// <summary>
@@ -2641,25 +2617,34 @@ namespace Ekstrand.Collections.Generic
             }
 
             #endregion Structs + Classes + Enums
+        }
 
+        // used to place a pointer to from key-a
+        internal class EntryNode
+        {
+            public EntryNode()
+            {
+                Value = default(TValue);
+
+            }
+            public EntryNode(TValue value)
+            {
+                Value = value;
+            }
+
+            public TValue Value;
+            public EntryNode Next;
         }
 
         private struct Entry
         {
-
-            #region Fields
-
             public int hashCode;        // Lower 31 bits of hash code, -1 if unused
             public bool IsBkey;			// is entry a B or A key
             public TKeyA keyA;          // Key A entry
             public TKeyB keyB;          // Key B entry                  
             public int next;            // Index of next entry, -1 if last key of entry
-            public TValue value;
-
-            #endregion Fields
+            public EntryNode node;      // EntryNode for holding TValue and to take a reference from key-a
         }
-
-
     }
 
     internal class TwoKeyDictionaryDebugView<TKeyA, TKeyB, TValue>
