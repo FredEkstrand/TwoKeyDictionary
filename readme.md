@@ -30,10 +30,6 @@ Basic code examples:
 static void Main(string[] args)
 {
 
-	//init();
-	//ColorExamples();
-	//Console.ReadLine();
-
 	TwoKeyDictionary<int, string, string> tkd = new TwoKeyDictionary<int, string, string>();
 
 	// Add elements to the two key dictionary
