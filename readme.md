@@ -1,16 +1,15 @@
-# TwoKeyDictionary<TKeyA,TKeyB,TValue>
+# Generic Two Key Dictionary
 ![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg) ![License MIT](https://img.shields.io/badge/Licence-MIT-blue.svg)
 
 ![image](https://github.com/FredEkstrand/ImageFiles/raw/master/TwoKeyDictionary/TwoKeyDictionaryImage.png)	
 
 # Overview
-A Two Key Dictionary is a data structure that represents a collection of a-keys, b-keys and values triple data. You only need either a-key or b-key to return the value. The two key dictionary have the restriction that a-key and b-key cannot have the same value weather they map to the same value or not. **_Note:_** the current version doesn't provide any checks for duplicate key values between a-key and b-key. If so, the results would be nondeterministic. 
+A Two Key Dictionary is a data structure that represents a collection of a-keys, b-keys and values triple data. You only need either a-key or b-key to return the value. The two key dictionary have the restriction that a/b-key cannot have the same value weather they map to the same key-value or not. **_Note:_** the current version doesn't provide any checks for duplicate key values between a-key and b-key. If so, the results would be nondeterministic. 
 
 # Features
 The Two Key Dictionary provide the following features:
 * The two key dictionary requires only a-key or b-key to return the mapped value.
 * The two key dictionary a-key or b-key cannot be null, but value can be.
-* The two key dictionary is an ordered collection.
 * The two key dictionary indexer by, a-key or b-key, to access individual item.
 * Provided TryGetValue() method to get the value of a key to avoid possible runtime exceptions. 
 * The two key dictionary cannot contain duplicate a-keys or b-key.
@@ -30,27 +29,64 @@ Basic code examples:
 ```csharp
 static void Main(string[] args)
 {
-	// Key-A = color name, Key-B = enum , Value = string with hex color value.
-	// TwoKeyDictionary<string, CrayolaCrayons, string> CrayolaColors = init(); // loads up the dictionary with key,key and values	
-	int count = CrayolaColors.Count; // count is 120
-	
-	
-	// Example 1: Index by A-Key for hex color value.   
-	string result = "CrayolaColors["AntiqueBrass"]; 	// result is "FFCD9575".		
+	TwoKeyDictionary<int,string,string> tkd = new TwoKeyDictionary<int,string,string>();
 
-	// Example 2: Index by B-Key for hex color value.	
-	result = CrayolaColors[CrayolaCrayons.Fern];        // result is "FF71BC78".
+// Add elements to the two key dictionary
+tkd.Add(33024, LJ02-026XN-PEP2F-M88L, 7FwCTLnD0ZdnDmYRPbZW);
+tkd.Add(66571, LJ02-026XN-PEP2F-M88N, Y4cE253SCT3agPC96Fhd);
+tkd.Add(86280, LJ02-026XN-PEP2F-M88T, cGnsZLmKK8xKDQnCprKY);
+tkd.Add(58647, LJ02-026XN-PEP2F-M88R, TWAggDF0jZVH454RRvrs);
+tkd.Add(87303, LJ02-026XN-PEP2F-M88Q, TuGEgtXSm9WQ6JLFGGLW);
+tkd.Add(86891, LJ02-026XN-PEP2F-M88P, ExmwnpRHWWx39dEkP6Ay);
+tkd.Add(69992, LJ02-026XN-PEP2F-M88M, cQ6RNcQcEm1KFXqRkBth);
 
-	// Example 3: Remove Key-A.
-	CrayolaColors.RemoveKeyA("Bittersweet"); // goodbye 
+// Access by index by A-Key
+string result = string.empty;
+result = tkd[58647];		// Result would be: TWAggDF0jZVH454RRvrs
 
-	// Now check if the Key-A is removed.
-	bool bresult = CrayolaColors.ContainsKeyA("Bittersweet"); // bresult is false.
+// Access by index by B-Key
+result = tdk[LJ02-026XN-PEP2F-M88M];	// Result would be: cQ6RNcQcEm1KFXqRkBth
 
-	// Now check if the corresponding B Key is removed as well.");
-	bresult = CrayolaColors.ContainsKeyB(CrayolaCrayons.Bittersweet); // bresult is false.
-	
-	count = CrayolaColors.Count; // count is now 119
+// Contains key for A/B-Key
+bool bResult = false;
+bResult = tdk.ContainsKeyA(86280);	// Result would be: true
+
+bResult = tdk.ContainsKeyB(LJ02-026XN-PEP2F-M881);	// Result would be: false;
+
+// TwoKeyDictionaryRemovalKeyAB
+tdk.RemoveKeyA(int);	// Removes A-Key and B-Key with value from the two key dictionary.
+bResult = tdk.ContainsKeyB(string)	// Result would be: false;
+
+int count = tdk.Count;	// Result would be: 6 After the removal of A-Key & B-Key with value.
+
+// Enumeration of entries from TwoKeyValueTriple
+foreach(TwoKeyValueTriple<int, string, string> item in tkd)
+{
+	Console.WriteLine("{0},  {1},  {2}",item.KeyA, item.KeyB, item.Value);
+}
+	/* Output
+		33024, LJ02-026XN-PEP2F-M88L, 7FwCTLnD0ZdnDmYRPbZW
+		66571, LJ02-026XN-PEP2F-M88N, Y4cE253SCT3agPC96Fhd
+		58647, LJ02-026XN-PEP2F-M88R, TWAggDF0jZVH454RRvrs
+		87303, LJ02-026XN-PEP2F-M88Q, TuGEgtXSm9WQ6JLFGGLW
+		86891, LJ02-026XN-PEP2F-M88P, ExmwnpRHWWx39dEkP6Ay
+		69992, LJ02-026XN-PEP2F-M88M, cQ6RNcQcEm1KFXqRkBth	
+	*/
+
+// Enumeration of A-Keys
+foreach (int item in tkd.AKeys)
+{
+	Console.WriteLine("{0}", item);
+}
+
+	/* Output
+		33024
+		66571
+		58647
+		87303
+		86891
+		69992	
+	*/
 	
 }
 ```
