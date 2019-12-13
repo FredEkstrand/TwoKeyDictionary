@@ -29,41 +29,52 @@ Basic code examples:
 ```csharp
 static void Main(string[] args)
 {
-	TwoKeyDictionary<int,string,string> tkd = new TwoKeyDictionary<int,string,string>();
 
-// Add elements to the two key dictionary
-tkd.Add(33024, LJ02-026XN-PEP2F-M88L, 7FwCTLnD0ZdnDmYRPbZW);
-tkd.Add(66571, LJ02-026XN-PEP2F-M88N, Y4cE253SCT3agPC96Fhd);
-tkd.Add(86280, LJ02-026XN-PEP2F-M88T, cGnsZLmKK8xKDQnCprKY);
-tkd.Add(58647, LJ02-026XN-PEP2F-M88R, TWAggDF0jZVH454RRvrs);
-tkd.Add(87303, LJ02-026XN-PEP2F-M88Q, TuGEgtXSm9WQ6JLFGGLW);
-tkd.Add(86891, LJ02-026XN-PEP2F-M88P, ExmwnpRHWWx39dEkP6Ay);
-tkd.Add(69992, LJ02-026XN-PEP2F-M88M, cQ6RNcQcEm1KFXqRkBth);
+	//init();
+	//ColorExamples();
+	//Console.ReadLine();
 
-// Access by index by A-Key
-string result = string.empty;
-result = tkd[58647];		// Result would be: TWAggDF0jZVH454RRvrs
+	TwoKeyDictionary<int, string, string> tkd = new TwoKeyDictionary<int, string, string>();
 
-// Access by index by B-Key
-result = tdk[LJ02-026XN-PEP2F-M88M];	// Result would be: cQ6RNcQcEm1KFXqRkBth
+	// Add elements to the two key dictionary
+	tkd.Add(33024, "LJ02-026XN-PEP2F-M88L", "7FwCTLnD0ZdnDmYRPbZW");
+	tkd.Add(66571, "LJ02-026XN-PEP2F-M88N", "Y4cE253SCT3agPC96Fhd");
+	tkd.Add(86280, "LJ02-026XN-PEP2F-M88T", "cGnsZLmKK8xKDQnCprKY");
+	tkd.Add(58647, "LJ02-026XN-PEP2F-M88R", "TWAggDF0jZVH454RRvrs");
+	tkd.Add(87303, "LJ02-026XN-PEP2F-M88Q", "TuGEgtXSm9WQ6JLFGGLW");
+	tkd.Add(86891, "LJ02-026XN-PEP2F-M88P", "ExmwnpRHWWx39dEkP6Ay");
+	tkd.Add(69992, "LJ02-026XN-PEP2F-M88M", "cQ6RNcQcEm1KFXqRkBth");
 
-// Contains key for A/B-Key
-bool bResult = false;
-bResult = tdk.ContainsKeyA(86280);	// Result would be: true
+	// Access by index by A-Key
+	string result = string.Empty;
+	result = tkd[58647];        // Result would be: TWAggDF0jZVH454RRvrs
+	Console.WriteLine("Index by A-Key: {0}", result);
 
-bResult = tdk.ContainsKeyB(LJ02-026XN-PEP2F-M881);	// Result would be: false;
+	// Access by index by B-Key
+	result = tkd["LJ02-026XN-PEP2F-M88M"];  // Result would be: cQ6RNcQcEm1KFXqRkBth
+	Console.WriteLine("Index by B-Key: {0}", result);
 
-// TwoKeyDictionaryRemovalKeyAB
-tdk.RemoveKeyA(int);	// Removes A-Key and B-Key with value from the two key dictionary.
-bResult = tdk.ContainsKeyB(string)	// Result would be: false;
+	// Contains key for A/B-Key
+	bool bResult = false;
+	bResult = tkd.ContainsKeyA(86280);  // Result would be: true
 
-int count = tdk.Count;	// Result would be: 6 After the removal of A-Key & B-Key with value.
+	bResult = tkd.ContainsKeyB("LJ02-026XN-PEP2F-M881");    // Result would be: false;
+	Console.WriteLine("Contains BKey: {0}, Result: {1}", "LJ02-026XN-PEP2F-M881", bResult);
 
-// Enumeration of entries from TwoKeyValueTriple
-foreach(TwoKeyValueTriple<int, string, string> item in tkd)
-{
-	Console.WriteLine("{0},  {1},  {2}",item.KeyA, item.KeyB, item.Value);
-}
+	// TwoKeyDictionaryRemovalKeyAB
+	tkd.RemoveKeyA(86280);    // Removes A-Key and B-Key with value from the two key dictionary.
+	bResult = tkd.ContainsKeyB("LJ02-026XN-PEP2F-M88T");	// Result would be: false;
+	Console.WriteLine("Contains BKey: {0}", bResult);
+
+	int count = tkd.Count;  // Result would be: 6 After the removal of A-Key & B-Key with value.
+	Console.WriteLine("Two Key Dictionary Count: {0}", count);
+	Console.WriteLine();
+
+	// Enumeration of entries from TwoKeyValueTriple
+	foreach (TwoKeyValueTriple<int, string, string> item in tkd)
+	{
+		Console.WriteLine("{0},  {1},  {2}", item.KeyA, item.KeyB, item.Value);
+	}
 	/* Output
 		33024, LJ02-026XN-PEP2F-M88L, 7FwCTLnD0ZdnDmYRPbZW
 		66571, LJ02-026XN-PEP2F-M88N, Y4cE253SCT3agPC96Fhd
@@ -73,11 +84,13 @@ foreach(TwoKeyValueTriple<int, string, string> item in tkd)
 		69992, LJ02-026XN-PEP2F-M88M, cQ6RNcQcEm1KFXqRkBth	
 	*/
 
-// Enumeration of A-Keys
-foreach (int item in tkd.AKeys)
-{
-	Console.WriteLine("{0}", item);
-}
+	Console.WriteLine();
+
+	// Enumeration of A-Keys
+	foreach (int item in tkd.AKeys)
+	{
+		Console.WriteLine("{0}", item);
+	}
 
 	/* Output
 		33024
@@ -87,7 +100,7 @@ foreach (int item in tkd.AKeys)
 		86891
 		69992	
 	*/
-	
+	Console.ReadLine();
 }
 ```
 
