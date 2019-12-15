@@ -23,7 +23,8 @@ namespace Ekstrand.Collections.Generic
 
         #region Fields
 
-        private const String ComparerName = "Comparer";
+        private const String ComparerAName = "ComparerA";
+        private const String ComparerBName = "ComparerB";
 
         private const String HashSizeName = "HashSize";
 
@@ -812,15 +813,16 @@ namespace Ekstrand.Collections.Generic
         /// </summary>
         /// <param name="info">A SerializationInfo object that contains the information required to serialize the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.</param>
         /// <param name="context">A StreamingContext structure that contains the source and destination of the serialized stream associated with the Dictionary&lt;TKeyA,TKeyB,TValue&gt; instance.</param>
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        [System.Security.SecurityCritical]
+        public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             if (info == null)
             {
                 throw new ArgumentNullException(info.ToString());
             }
             info.AddValue(VersionName, version);
-            info.AddValue(ComparerName, HashHelpers.GetEqualityComparerForSerialization(comparerA), typeof(IEqualityComparer<TKeyA>));
-            info.AddValue(ComparerName, HashHelpers.GetEqualityComparerForSerialization(comparerB), typeof(IEqualityComparer<TKeyB>));
+            info.AddValue(ComparerAName, HashHelpers.GetEqualityComparerForSerialization(comparerA), typeof(IEqualityComparer<TKeyA>));
+            info.AddValue(ComparerBName, HashHelpers.GetEqualityComparerForSerialization(comparerB), typeof(IEqualityComparer<TKeyB>));
             info.AddValue(HashSizeName, buckets == null ? 0 : buckets.Length); //This is the length of the bucket array.
             if (buckets != null)
             {
@@ -1055,8 +1057,8 @@ namespace Ekstrand.Collections.Generic
 
             int realVersion = siInfo.GetInt32(VersionName);
             int hashsize = siInfo.GetInt32(HashSizeName);
-            comparerA = (IEqualityComparer<TKeyA>)siInfo.GetValue(ComparerName, typeof(IEqualityComparer<TKeyA>));
-            comparerB = (IEqualityComparer<TKeyB>)siInfo.GetValue(ComparerName, typeof(IEqualityComparer<TKeyB>));
+            comparerA = (IEqualityComparer<TKeyA>)siInfo.GetValue(ComparerAName, typeof(IEqualityComparer<TKeyA>));
+            comparerB = (IEqualityComparer<TKeyB>)siInfo.GetValue(ComparerBName, typeof(IEqualityComparer<TKeyB>));
 
             if (hashsize != 0)
             {

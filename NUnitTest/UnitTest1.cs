@@ -6,7 +6,10 @@ using System.Collections.Generic;
 using System;
 using System.ComponentModel;
 using CategoryAttribute = NUnit.Framework.CategoryAttribute;
-
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using System.Linq;
 
 namespace NUnitTests
 {
@@ -840,6 +843,102 @@ namespace NUnitTests
 
             Assert.AreEqual(ptkd.vvalues[6], result);
         }
+
+        #endregion
+
+        #region Serialization
+
+        [Test]
+        [Category("Serialization")]
+        public void SerializationCheck()
+        {
+            TwoKeyDictionary<int, string, string> tkd = new TwoKeyDictionary<int, string, string>();
+            // load it up
+            tkd.Add(33024, "LJ02-026XN-PEP2F-M88L", "7FwCTLnD0ZdnDmYRPbZW");
+            tkd.Add(66571, "LJ02-026XN-PEP2F-M88N", "Y4cE253SCT3agPC96Fhd");
+            tkd.Add(86280, "LJ02-026XN-PEP2F-M88T", "cGnsZLmKK8xKDQnCprKY");
+            tkd.Add(58647, "LJ02-026XN-PEP2F-M88R", "TWAggDF0jZVH454RRvrs");
+            tkd.Add(87303, "LJ02-026XN-PEP2F-M88Q", "TuGEgtXSm9WQ6JLFGGLW");
+            tkd.Add(86891, "LJ02-026XN-PEP2F-M88P", "ExmwnpRHWWx39dEkP6Ay");
+            tkd.Add(69992, "LJ02-026XN-PEP2F-M88M", "cQ6RNcQcEm1KFXqRkBth");
+
+            BinaryFormatter bf = new BinaryFormatter();
+            byte[] serializeA;
+            byte[] serializeB;
+
+            serializeA = ObjectToByteArray(tkd);
+            serializeB = ObjectToByteArray(tkd);
+
+            Object deserializeA = ByteArrayToObject(serializeA);
+            Object deserializeB = ByteArrayToObject(serializeB);
+
+            bool result = false;
+            result = CompairStringDictionary(((TwoKeyDictionary<int, string, string>)deserializeA), tkd);
+            Assert.AreEqual(true, result);
+
+            result = CompairStringDictionary(((TwoKeyDictionary<int, string, string>)deserializeB), tkd);
+            Assert.AreEqual(true, result);
+        }        
+
+        public static byte[] ObjectToByteArray(Object obj)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (var ms = new MemoryStream())
+            {
+                bf.Serialize(ms, obj);
+                return ms.ToArray();
+            }
+        }
+
+        public static Object ByteArrayToObject(byte[] arrBytes)
+        {
+            using (var memStream = new MemoryStream())
+            {
+                var binForm = new BinaryFormatter();
+                memStream.Write(arrBytes, 0, arrBytes.Length);
+                memStream.Seek(0, SeekOrigin.Begin);
+                var obj = binForm.Deserialize(memStream);
+                return obj;
+            }
+        }
+
+        public static bool CompairStringDictionary(TwoKeyDictionary<int,string,string> src, TwoKeyDictionary<int,string,string> exp)
+        {            
+            if(src.BKeys.Count != exp.BKeys.Count)
+            {
+                return false;
+            }
+
+            string valueA;
+            string valueB;
+            
+            foreach(TwoKeyValueTriple<int,string,string> item in exp)
+            {
+                if (src.TryGetValueKeyB(item.KeyB, out valueB))
+                {
+                    if(src.TryGetValueKeyA(item.KeyA, out valueA))
+                    {
+                        if(valueA != item.Value || valueB != item.Value)
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                    
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+ 
 
         #endregion
     }

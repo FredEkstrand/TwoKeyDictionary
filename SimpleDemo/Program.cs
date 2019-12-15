@@ -11,8 +11,77 @@ namespace ConsoleTester
         private static TwoKeyDictionary<string, CrayolaCrayons, string> CrayolaColors;
         static void Main(string[] args)
         {
-            init();
-            ColorExamples();
+
+            //init();
+            //ColorExamples();
+            //Console.ReadLine();
+
+            TwoKeyDictionary<int, string, string> tkd = new TwoKeyDictionary<int, string, string>();
+
+            // Add elements to the two key dictionary
+            tkd.Add(33024, "LJ02-026XN-PEP2F-M88L", "7FwCTLnD0ZdnDmYRPbZW");
+            tkd.Add(66571, "LJ02-026XN-PEP2F-M88N", "Y4cE253SCT3agPC96Fhd");
+            tkd.Add(86280, "LJ02-026XN-PEP2F-M88T", "cGnsZLmKK8xKDQnCprKY");
+            tkd.Add(58647, "LJ02-026XN-PEP2F-M88R", "TWAggDF0jZVH454RRvrs");
+            tkd.Add(87303, "LJ02-026XN-PEP2F-M88Q", "TuGEgtXSm9WQ6JLFGGLW");
+            tkd.Add(86891, "LJ02-026XN-PEP2F-M88P", "ExmwnpRHWWx39dEkP6Ay");
+            tkd.Add(69992, "LJ02-026XN-PEP2F-M88M", "cQ6RNcQcEm1KFXqRkBth");
+
+            // Access by index by A-Key
+            string result = string.Empty;
+            result = tkd[58647];        // Result would be: TWAggDF0jZVH454RRvrs
+            Console.WriteLine("Index by A-Key: {0}", result);
+
+            // Access by index by B-Key
+            result = tkd["LJ02-026XN-PEP2F-M88M"];  // Result would be: cQ6RNcQcEm1KFXqRkBth
+            Console.WriteLine("Index by B-Key: {0}", result);
+
+            // Contains key for A/B-Key
+            bool bResult = false;
+            bResult = tkd.ContainsKeyA(86280);  // Result would be: true
+
+            bResult = tkd.ContainsKeyB("LJ02-026XN-PEP2F-M881");    // Result would be: false;
+            Console.WriteLine("Contains BKey: {0}, Result: {1}", "LJ02-026XN-PEP2F-M881", bResult);
+
+            // TwoKeyDictionaryRemovalKeyAB
+            tkd.RemoveKeyA(86280);    // Removes A-Key and B-Key with value from the two key dictionary.
+            bResult = tkd.ContainsKeyB("LJ02-026XN-PEP2F-M88T");	// Result would be: false;
+            Console.WriteLine("Contains BKey: {0}", bResult);
+
+            int count = tkd.Count;  // Result would be: 6 After the removal of A-Key & B-Key with value.
+            Console.WriteLine("Two Key Dictionary Count: {0}", count);
+            Console.WriteLine();
+
+            // Enumeration of entries from TwoKeyValueTriple
+            foreach (TwoKeyValueTriple<int, string, string> item in tkd)
+            {
+                Console.WriteLine("{0},  {1},  {2}", item.KeyA, item.KeyB, item.Value);
+            }
+            /* Output
+                33024, LJ02-026XN-PEP2F-M88L, 7FwCTLnD0ZdnDmYRPbZW
+                66571, LJ02-026XN-PEP2F-M88N, Y4cE253SCT3agPC96Fhd
+                58647, LJ02-026XN-PEP2F-M88R, TWAggDF0jZVH454RRvrs
+                87303, LJ02-026XN-PEP2F-M88Q, TuGEgtXSm9WQ6JLFGGLW
+                86891, LJ02-026XN-PEP2F-M88P, ExmwnpRHWWx39dEkP6Ay
+                69992, LJ02-026XN-PEP2F-M88M, cQ6RNcQcEm1KFXqRkBth	
+            */
+
+            Console.WriteLine();
+
+            // Enumeration of A-Keys
+            foreach (int item in tkd.AKeys)
+            {
+                Console.WriteLine("{0}", item);
+            }
+
+            /* Output
+                33024
+                66571
+                58647
+                87303
+                86891
+                69992	
+            */
             Console.ReadLine();
         }
 
@@ -103,8 +172,75 @@ namespace ConsoleTester
             Console.WriteLine("Check if key is removed: {0}", !threeNumDic.ContainsKeyA(4));
             Console.WriteLine("Check if corresponding key is removed: {0}", !threeNumDic.ContainsKeyB(5));
             Console.WriteLine("Dictionary count: {0}", threeNumDic.Count);
-            
 
+            Console.WriteLine();
+            Console.WriteLine("Insert with null value");
+            TwoKeyDictionary<int, int, Person> tkde2 = new TwoKeyDictionary<int, int, Person>();
+            DateTime dob = DateTime.Parse("11/12/1965");
+            tkde2.Add(1, 2, new Person("foo", string.Empty, "bar", dob, 54));
+            dob = DateTime.Parse("4/17/1943");
+            tkde2.Add(3, 4, new Person("boo", string.Empty, "bar", dob, 76));
+            // null value for person
+            tkde2.Add(5, 6, null);
+
+            foreach (TwoKeyValueTriple<int,int,Person> kp in tkde2)
+            {
+                if (kp.Value != null)
+                {
+                    Console.WriteLine(kp.Value.ToString() + "\n");
+                }
+                else
+                {
+                    Console.WriteLine("Person is null" + "\n");
+                }
+
+
+            }
+        }
+
+        public class Person
+        {
+            public Person()
+            {
+                FirstName = string.Empty;
+                MiddleName = string.Empty;
+                LastName = string.Empty;
+                DOB = DateTime.MinValue;
+                Age = -1;
+            }
+
+            public Person(string fName, string mName, string lName):this()
+            {
+                FirstName = fName;
+                MiddleName = mName;
+                LastName = lName;
+            }
+
+            public Person(string fName, string mName, string lName, DateTime dob, int age) : this(fName,mName,lName)
+            {
+                DOB = dob;
+                Age = age;
+            }
+
+            public string FirstName
+            { get; set; }
+
+            public string MiddleName
+            { get; set; }
+
+            public string LastName
+            { get; set; }
+
+            public DateTime DOB
+            { get; set; }
+
+            public int Age
+            { get; set; }
+
+            public override string ToString()
+            {
+                return FirstName + MiddleName + LastName + " " + DOB + " " + Age;
+            }
         }
 
         public enum CrayolaCrayons
